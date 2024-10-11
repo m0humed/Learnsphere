@@ -4,6 +4,7 @@ using E_Learning.Services.IService;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
 using System.Security.Claims;
 
 namespace E_Learning.Services.Service
@@ -59,7 +60,8 @@ namespace E_Learning.Services.Service
                 process.Message = "There Is no account for email: " + model.Email;
                 return process;
             }
-            if (await userManager.CheckPasswordAsync(user, model.Password))
+            var validPassword = await userManager.CheckPasswordAsync(user, model.Password);
+            if (!validPassword)
             {
                 process.Message = "Wrong Password";
                 return process;
@@ -81,21 +83,35 @@ namespace E_Learning.Services.Service
                 Email = model.Email,
                 FName = model.FName,
                 LName = model.LName,
+                UserName = model.UserName,
+                Image = "NotDefine.jpg",
+                DateJoined = DateTime.Now,
+                LastLogin = DateTime.Now,
+                PhoneNumberConfirmed = false,
             };
+
             ProcessResult process = new ProcessResult();
-            var result = await userManager.CreateAsync(user , model.Password);
+            var result = await userManager.CreateAsync(user, model.Password);
+
             if (result.Succeeded)
             {
                 process.IsSucceded = true;
-                if (!await roleManager.RoleExistsAsync(model.RegisteredAs)){
+
+                // Check if role exists, if not create the role
+                if (!await roleManager.RoleExistsAsync(model.RegisteredAs))
+                {
                     await roleManager.CreateAsync(new IdentityRole
                     {
                         Name = model.RegisteredAs,
                         NormalizedName = model.RegisteredAs.ToUpper()
                     });
                 }
+
+                // Add user to role
                 await userManager.AddToRoleAsync(user, model.RegisteredAs);
-                if (await userManager.IsInRoleAsync(user , "Intructor"))
+
+                // Add a balance claim if the user is an instructor
+                if (await userManager.IsInRoleAsync(user, "Instructor"))
                 {
                     var claim = new Claim("Balance", "0");
                     await userManager.AddClaimAsync(user, claim);
@@ -105,12 +121,15 @@ namespace E_Learning.Services.Service
             {
                 string Error = string.Empty;
                 foreach (var error in result.Errors)
-                    Error += $"\n{error.Description} , ";
+                {
+                    Error += $"\n{error.Description}, ";
+                }
                 process.Message = Error;
             }
-            
+
             return process;
         }
+
 
         public async Task<ProcessResult> ResetPasswordAsync([FromBody]ResetPasswordRequest model)
         {

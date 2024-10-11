@@ -17,11 +17,14 @@ namespace E_Learning.Areas.Authentication.Controllers
         }
 
         #region Register
+        [HttpGet]
         public async Task<IActionResult> Register()
         {
             return View("Register" , new RegisterRequest());
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> SaveRegister(RegisterRequest model)
         {
             if (ModelState.IsValid)
@@ -30,10 +33,15 @@ namespace E_Learning.Areas.Authentication.Controllers
                 if (!result.IsSucceded)
                 {
                     ModelState.AddModelError(string.Empty, result.Message);
-                    return Ok();
+                    return View("Register", model);  
+                }
+                else
+                {
+                    var loginData = new LoginRequest { Email = model.Email, Password = model.Password, RememberMe = true };
+                    return  RedirectToAction("Login", loginData);
                 }
             }
-            return Ok();
+            return View("Register", model);  
         }
 
 
@@ -125,10 +133,14 @@ namespace E_Learning.Areas.Authentication.Controllers
         #endregion
 
         #region Login & Logout
+        [HttpGet]
         public async Task<IActionResult> ShowLogin()
         {
-            return Ok();
+            return View("login" , new LoginRequest());
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginRequest model)
         {
             if (ModelState.IsValid)
@@ -136,15 +148,19 @@ namespace E_Learning.Areas.Authentication.Controllers
                 var result = await authService.LoginAsync(model);
                 if (result.IsSucceded)
                 {
-                    return Ok();
+                    return RedirectToAction("HomeIndex", "HomeArea", new { area = "Home" });
                 }
                 else
                 {
-
+                    if (result.Message.Contains("Password"))
+                        ModelState.AddModelError("Password", result.Message);
+                    else
+                        ModelState.AddModelError("Email", result.Message);
                 }
             }
-            return Ok();
+            return View("Login" , model);
         }
+
         public async Task<IActionResult> Logout()
         {
             await authService.LogoutAsync();

@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "E:\\_Pioneers course\\Learnsphere\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|e:\\_pioneers course\\learnsphere\\e_learning\\areas\\authentication\\models\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|solutionrelative:e_learning\\areas\\authentication\\models\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|e:\\_pioneers course\\learnsphere\\e_learning\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|solutionrelative:e_learning\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|e:\\_pioneers course\\learnsphere\\e_learning\\areas\\authentication\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|solutionrelative:e_learning\\areas\\authentication\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|e:\\_pioneers course\\learnsphere\\e_learning\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|solutionrelative:e_learning\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|e:\\_pioneers course\\learnsphere\\e_learning\\areas\\authentication\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -23,20 +23,16 @@
       "RelativeMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|solutionrelative:e_learning\\services\\service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|e:\\_pioneers course\\learnsphere\\e_learning\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|solutionrelative:e_learning\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|e:\\_pioneers course\\learnsphere\\e_learning\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|solutionrelative:e_learning\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|e:\\_pioneers course\\learnsphere\\e_learning\\areas\\search\\views\\search\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|solutionrelative:e_learning\\areas\\search\\views\\search\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|e:\\_pioneers course\\learnsphere\\e_learning\\areas\\home\\controllers\\homeareacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|solutionrelative:e_learning\\areas\\home\\controllers\\homeareacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|e:\\_pioneers course\\learnsphere\\e_learning\\areas\\search\\controllers\\searchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|solutionrelative:e_learning\\areas\\search\\controllers\\searchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|e:\\_pioneers course\\learnsphere\\e_learning\\areas\\search\\views\\search\\_categoryfilterpartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|solutionrelative:e_learning\\areas\\search\\views\\search\\_categoryfilterpartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|e:\\_pioneers course\\learnsphere\\e_learning\\areas\\authentication\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|solutionrelative:e_learning\\areas\\authentication\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,8 +42,87 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "login.cshtml",
+              "DocumentMoniker": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Authentication\\Views\\Account\\login.cshtml",
+              "RelativeDocumentMoniker": "E_Learning\\Areas\\Authentication\\Views\\Account\\login.cshtml",
+              "ToolTip": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Authentication\\Views\\Account\\login.cshtml",
+              "RelativeToolTip": "E_Learning\\Areas\\Authentication\\Views\\Account\\login.cshtml",
+              "ViewState": "AQIAAEwAAAAAAAAAAADwv0MAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T11:15:33.952Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "E_Learning\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "E_Learning\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAADwvx0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T19:57:44.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Program.cs",
+              "RelativeDocumentMoniker": "E_Learning\\Program.cs",
+              "ToolTip": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Program.cs",
+              "RelativeToolTip": "E_Learning\\Program.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAADwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T19:27:40.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Models\\User.cs",
+              "RelativeDocumentMoniker": "E_Learning\\Models\\User.cs",
+              "ToolTip": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Models\\User.cs",
+              "RelativeToolTip": "E_Learning\\Models\\User.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T19:17:26.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Services\\Service\\AuthService.cs",
+              "RelativeDocumentMoniker": "E_Learning\\Services\\Service\\AuthService.cs",
+              "ToolTip": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Services\\Service\\AuthService.cs",
+              "RelativeToolTip": "E_Learning\\Services\\Service\\AuthService.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAIwEcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T19:01:19.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Authentication\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "E_Learning\\Areas\\Authentication\\Views\\Account\\Register.cshtml",
+              "ToolTip": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Authentication\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "E_Learning\\Areas\\Authentication\\Views\\Account\\Register.cshtml",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAiwD0AAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T18:40:38.02Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -62,112 +137,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Services\\Service\\AuthService.cs",
-              "RelativeDocumentMoniker": "E_Learning\\Services\\Service\\AuthService.cs",
-              "ToolTip": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Services\\Service\\AuthService.cs",
-              "RelativeToolTip": "E_Learning\\Services\\Service\\AuthService.cs",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAAAGAAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T15:25:07.36Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RegisterRequest.cs",
-              "DocumentMoniker": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Authentication\\Models\\RegisterRequest.cs",
-              "RelativeDocumentMoniker": "E_Learning\\Areas\\Authentication\\Models\\RegisterRequest.cs",
-              "ToolTip": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Authentication\\Models\\RegisterRequest.cs",
-              "RelativeToolTip": "E_Learning\\Areas\\Authentication\\Models\\RegisterRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T15:17:59.68Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Authentication\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "E_Learning\\Areas\\Authentication\\Views\\Account\\Register.cshtml",
-              "ToolTip": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Authentication\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "E_Learning\\Areas\\Authentication\\Views\\Account\\Register.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABoAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-09T15:16:11.141Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "AccountController.cs",
               "DocumentMoniker": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Authentication\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "E_Learning\\Areas\\Authentication\\Controllers\\AccountController.cs",
               "ToolTip": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Authentication\\Controllers\\AccountController.cs",
               "RelativeToolTip": "E_Learning\\Areas\\Authentication\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABUAAAA4AAAA",
+              "ViewState": "AQIAAI4AAAAAAAAAAAAAAJcAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T15:12:21.709Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "login.cshtml",
-              "DocumentMoniker": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Authentication\\Views\\Account\\login.cshtml",
-              "RelativeDocumentMoniker": "E_Learning\\Areas\\Authentication\\Views\\Account\\login.cshtml",
-              "ToolTip": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Authentication\\Views\\Account\\login.cshtml",
-              "RelativeToolTip": "E_Learning\\Areas\\Authentication\\Views\\Account\\login.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-09T15:12:06.88Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "E_Learning\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "E_Learning\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-08T23:37:38.466Z"
+              "WhenOpened": "2024-10-09T23:34:09.292Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Search.cshtml",
-              "DocumentMoniker": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Search\\Views\\Search\\Search.cshtml",
-              "RelativeDocumentMoniker": "E_Learning\\Areas\\Search\\Views\\Search\\Search.cshtml",
-              "ToolTip": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Search\\Views\\Search\\Search.cshtml",
-              "RelativeToolTip": "E_Learning\\Areas\\Search\\Views\\Search\\Search.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-08T13:42:28.322Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "_CategoryFilterPartialView.cshtml",
-              "DocumentMoniker": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Search\\Views\\Search\\_CategoryFilterPartialView.cshtml",
-              "RelativeDocumentMoniker": "E_Learning\\Areas\\Search\\Views\\Search\\_CategoryFilterPartialView.cshtml",
-              "ToolTip": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Search\\Views\\Search\\_CategoryFilterPartialView.cshtml",
-              "RelativeToolTip": "E_Learning\\Areas\\Search\\Views\\Search\\_CategoryFilterPartialView.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-08T13:40:37.704Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SearchController.cs",
-              "DocumentMoniker": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Search\\Controllers\\SearchController.cs",
-              "RelativeDocumentMoniker": "E_Learning\\Areas\\Search\\Controllers\\SearchController.cs",
-              "ToolTip": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Search\\Controllers\\SearchController.cs",
-              "RelativeToolTip": "E_Learning\\Areas\\Search\\Controllers\\SearchController.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACAAAAAAAAAA",
+              "Title": "HomeAreaController.cs",
+              "DocumentMoniker": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Home\\Controllers\\HomeAreaController.cs",
+              "RelativeDocumentMoniker": "E_Learning\\Areas\\Home\\Controllers\\HomeAreaController.cs",
+              "ToolTip": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Home\\Controllers\\HomeAreaController.cs",
+              "RelativeToolTip": "E_Learning\\Areas\\Home\\Controllers\\HomeAreaController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T13:32:56.597Z"
+              "WhenOpened": "2024-10-10T02:11:00.987Z",
+              "EditorCaption": ""
             }
           ]
         },

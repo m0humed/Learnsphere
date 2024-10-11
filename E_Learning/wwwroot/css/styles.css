@@ -20,7 +20,7 @@ body {
 .wrapper {
     position: relative;
     width: 400px;
-    height: 440px;
+    height: 700px;
     background: #5c6e7c;
     background-color: rgba(255, 255, 255,.1);
     border: 2px solid rgba(255,255,255,.5);

@@ -4,17 +4,20 @@
 	using E_Learning.Repositories.IReposatories;
 	using Microsoft.AspNetCore.Identity;
 	using Microsoft.EntityFrameworkCore;
-	using System.Collections.Generic;
+    using Microsoft.IdentityModel.Tokens;
+    using System.Collections.Generic;
 	using System.Threading.Tasks;
 
 	public class UserRepository : IUserRepository
 	{
 		private readonly UserManager<User> _userManager;
+        private readonly ApplicationDbContext dbContext;
 
-		public UserRepository(UserManager<User> userManager)
+        public UserRepository(UserManager<User> userManager,ApplicationDbContext dbContext)
 		{
 			_userManager = userManager;
-		}
+            this.dbContext = dbContext;
+        }
 
 		public async Task<User> GetByIdAsync(string userId)
 		{
@@ -66,6 +69,13 @@
 			// Update the user in the database
 			await _userManager.UpdateAsync(oldUser);
 		}
-	}
+
+        public async Task<User> GetByUserNameAsync(string username)
+        {
+            // Use SingleOrDefaultAsync to retrieve a single user or null if not found
+            return await dbContext.Users.SingleOrDefaultAsync(u => u.UserName == username);
+        }
+
+    }
 
 }

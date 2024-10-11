@@ -50,11 +50,11 @@ namespace E_Learning
 
 			builder.Services.AddIdentity<User, IdentityRole>(op =>
             {
-                op.Password.RequireDigit = true;
+                //op.Password.RequireDigit = true;
                 op.Password.RequiredLength = 8;
-                op.Password.RequireUppercase = true;
-                op.Password.RequireLowercase = true;
-                op.Password.RequireNonAlphanumeric = true;
+                //op.Password.RequireUppercase = true;
+                //op.Password.RequireLowercase = true;
+                //op.Password.RequireNonAlphanumeric = true;
             })
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             builder.Services.AddSession(op =>
@@ -64,8 +64,12 @@ namespace E_Learning
 
 			builder.Services.AddScoped<UserManager<User>>();
 
+            //builder.Services.AddIdentity<User, IdentityRole>()
+            //     .AddEntityFrameworkStores<ApplicationDbContext>()
+            //                     .AddDefaultTokenProviders();
 
-			var app = builder.Build();
+
+            var app = builder.Build();
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
