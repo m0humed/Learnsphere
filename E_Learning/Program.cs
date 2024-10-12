@@ -13,6 +13,7 @@ using E_Learning.Areas.Course.Data.Services;
 using E_Learning.Repositories.IReposatories;
 using E_Learning.Areas.Search.Data;
 using E_Learning.Areas.Payment.Models;
+using E_Learning.Helper;
 
 namespace E_Learning
 {
@@ -47,6 +48,7 @@ namespace E_Learning
             builder.Services.AddScoped<ICourseDiscountRepository, CourseDiscountRepository>();
             builder.Services.AddScoped<ICourseSearchRepository, CourseSearchRepository>();
             builder.Services.AddScoped<ICartRepository, CartRepository>();
+            builder.Services.AddScoped<IViewRenderService,ViewRenderService>();
             #endregion
 
 

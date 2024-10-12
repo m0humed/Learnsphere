@@ -1,6 +1,8 @@
 ﻿using E_Learning.Repository.IReposatories;
 using E_Learning.Areas.Home.Models;
 using E_Learning.Models;
+using E_Learning.Repositories.IReposatories;
+using Microsoft.AspNetCore.Identity;
 
 namespace E_Learning.Areas.Home.Data
 {
@@ -8,12 +10,19 @@ namespace E_Learning.Areas.Home.Data
     {
         private readonly ICourseRepository _course;
 		private readonly ICourseDiscountRepository courseDiscount;
+        private readonly ICartRepository cart;
+        private readonly IWishListRepository wishList;
+        private readonly UserManager<User> _userManager;
 
-		public CourseCardService(ICourseRepository course , ICourseDiscountRepository courseDiscount )
+        public CourseCardService(ICourseRepository course , 
+                                 ICourseDiscountRepository courseDiscount)
         {
             _course = course;
 			this.courseDiscount = courseDiscount;
-		}
+        }
+
+       
+
 
         public  async Task<CourseCardDetails> getCourseAsync(string id)
         {
@@ -27,6 +36,7 @@ namespace E_Learning.Areas.Home.Data
             details.Price = course.Result.Price;
             details.Image = course.Result.Image;
             details.Summary = course.Result.Summary;
+
 
             var descount = await courseDiscount.GetByIdAsync(id);
             if (descount != null)

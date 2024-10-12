@@ -17,7 +17,7 @@ namespace E_Learning.Repositories.Repository
 
         public async Task<IEnumerable<Course>> GetAllAsync()
         {
-            return await _context.Set<Course>().ToListAsync();
+            return await _context.Set<Course>().Include(c=>c.carts).ToListAsync();
         }
 
         public async Task<Course> GetByIdAsync(string id)
