@@ -2918,8 +2918,6 @@ E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\refs\Microsoft.Exten
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\refs\Microsoft.Extensions.Configuration.KeyPerFile.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\refs\Microsoft.Extensions.Configuration.UserSecrets.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\refs\Microsoft.Extensions.Configuration.Xml.dll
-E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\refs\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\refs\Microsoft.Extensions.DependencyInjection.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\refs\Microsoft.Extensions.Diagnostics.Abstractions.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\refs\Microsoft.Extensions.Diagnostics.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\refs\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
@@ -3387,3 +3385,4 @@ E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\MailKit.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\MimeKit.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\SendGrid.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\StarkbankEcdsa.dll
+E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll

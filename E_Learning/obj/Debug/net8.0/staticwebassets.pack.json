@@ -8605,6 +8605,54 @@
       "PackagePath": "staticwebassets\\assets\\fontawesome\\webfonts\\fa-v4compatibility.woff2"
     },
     {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\background\\error-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\background\\error-bg.jpg"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\background\\img4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\background\\img4.jpg"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\background\\img5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\background\\img5.jpg"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\background\\img6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\background\\img6.jpg"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\big\\Thumbs.db",
+      "PackagePath": "staticwebassets\\assets\\images\\big\\Thumbs.db"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\big\\img1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\big\\img1.jpg"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\big\\img2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\big\\img2.jpg"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\big\\img3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\big\\img3.jpg"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\big\\img4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\big\\img4.jpg"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\big\\img5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\big\\img5.jpg"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\big\\img6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\big\\img6.jpg"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\cart.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\cart.svg"
+    },
+    {
       "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\course-1.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\course-1.jpg"
     },
@@ -8617,12 +8665,36 @@
       "PackagePath": "staticwebassets\\assets\\images\\course-3.jpg"
     },
     {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\custom-select.png",
+      "PackagePath": "staticwebassets\\assets\\images\\custom-select.png"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\favicon.png",
+      "PackagePath": "staticwebassets\\assets\\images\\favicon.png"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\free-demo.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\free-demo.jpg"
+    },
+    {
       "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\hero-bg.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\hero-bg.jpg"
     },
     {
       "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\khod_logo.svg",
       "PackagePath": "staticwebassets\\assets\\images\\khod_logo.svg"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\logo-icon.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo-icon.png"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\logo-text.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo-text.png"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo.png"
     },
     {
       "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\logo.svg",
@@ -8647,6 +8719,86 @@
     {
       "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\tutor.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\tutor.jpg"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\users\\1-old.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\users\\1-old.jpg"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\users\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\users\\1.jpg"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\users\\1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\users\\1.png"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\users\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\users\\2.jpg"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\users\\2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\users\\2.png"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\users\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\users\\3.jpg"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\users\\3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\users\\3.png"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\users\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\users\\4.jpg"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\users\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\users\\5.jpg"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\users\\6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\users\\6.jpg"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\users\\7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\users\\7.jpg"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\users\\8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\users\\8.jpg"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\users\\agent.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\users\\agent.jpg"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\users\\agent2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\users\\agent2.jpg"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\users\\d1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\users\\d1.jpg"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\users\\d2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\users\\d2.jpg"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\users\\d3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\users\\d3.jpg"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\users\\d4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\users\\d4.jpg"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\users\\d5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\users\\d5.jpg"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\users\\profile.png",
+      "PackagePath": "staticwebassets\\assets\\images\\users\\profile.png"
     },
     {
       "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\assets\\images\\users\\user-1.jpg",

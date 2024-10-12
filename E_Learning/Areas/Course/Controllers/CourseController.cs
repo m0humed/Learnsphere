@@ -23,5 +23,11 @@ namespace E_Learning.Areas.Course.Controllers
 
 			return View(data);
 		}
+
+		public async Task AddtoCart(string CourseId , string UserId ) 
+		{ 
+
+		
+		}
 	}
 }

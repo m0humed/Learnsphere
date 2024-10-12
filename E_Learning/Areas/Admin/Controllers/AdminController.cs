@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace E_Learning.Areas.Admin.Controllers
 {
     [Authorize(Roles ="Admin")]
+    [Area("Admin")]
     public class AdminController : Controller
     {
         public AdminController()

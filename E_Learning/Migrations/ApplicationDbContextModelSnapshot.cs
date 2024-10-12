@@ -105,6 +105,21 @@ namespace E_Learning.Migrations
                     b.ToView("CourseviewModel", (string)null);
                 });
 
+            modelBuilder.Entity("E_Learning.Models.Cart", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("CourseId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("UserId", "CourseId");
+
+                    b.HasIndex("CourseId");
+
+                    b.ToTable("Carts");
+                });
+
             modelBuilder.Entity("E_Learning.Models.Category", b =>
                 {
                     b.Property<string>("Id")
@@ -891,6 +906,25 @@ namespace E_Learning.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("E_Learning.Models.Cart", b =>
+                {
+                    b.HasOne("E_Learning.Models.Course", "Course")
+                        .WithMany("carts")
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("E_Learning.Models.User", "User")
+                        .WithMany("carts")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("E_Learning.Models.Category", b =>
                 {
                     b.HasOne("E_Learning.Models.SuperCategory", "SuperCategory")
@@ -1201,6 +1235,8 @@ namespace E_Learning.Migrations
 
                     b.Navigation("WishLists");
 
+                    b.Navigation("carts");
+
                     b.Navigation("courseSections");
                 });
 
@@ -1236,6 +1272,8 @@ namespace E_Learning.Migrations
                     b.Navigation("Enrollment");
 
                     b.Navigation("UserAccountes");
+
+                    b.Navigation("carts");
                 });
 #pragma warning restore 612, 618
         }

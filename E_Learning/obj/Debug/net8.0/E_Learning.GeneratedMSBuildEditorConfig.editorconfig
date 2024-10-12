@@ -82,6 +82,34 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSG9tZVxWaWV3c1xIb21lQXJlYVxBcmVhX0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/_Pioneers course/Learnsphere/E_Learning/Areas/Home/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSG9tZVxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_Pioneers course/Learnsphere/E_Learning/Areas/Payment/Views - Copy/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGF5bWVudFxWaWV3cyAtIENvcHlcQ2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_Pioneers course/Learnsphere/E_Learning/Areas/Payment/Views - Copy/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGF5bWVudFxWaWV3cyAtIENvcHlcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_Pioneers course/Learnsphere/E_Learning/Areas/Payment/Views - Copy/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGF5bWVudFxWaWV3cyAtIENvcHlcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_Pioneers course/Learnsphere/E_Learning/Areas/Payment/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGF5bWVudFxWaWV3c1xDYXJ0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_Pioneers course/Learnsphere/E_Learning/Areas/Payment/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGF5bWVudFxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_Pioneers course/Learnsphere/E_Learning/Areas/Payment/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGF5bWVudFxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/_Pioneers course/Learnsphere/E_Learning/Areas/Search/Views/Search/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2VhcmNoXFZpZXdzXFNlYXJjaFxTZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

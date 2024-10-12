@@ -29,6 +29,11 @@ namespace E_Learning.Models
             builder.Entity<UserAccount>()
                 .HasKey(ua => new {ua.UserID , ua.SocialMediaID});
 
+            /////////////////////////////////////////
+            builder.Entity<Cart>().HasKey(
+                c=> new {UserId=c.UserId ,CourseId = c.CourseId}
+                );
+            
 
         }
         public DbSet<User> Users { get; set; }
@@ -54,6 +59,7 @@ namespace E_Learning.Models
         public DbSet<SuperCategory> SuperCategories { get; set; }
         public DbSet<CourseLevel> CourseLevels { get; set; }
         public DbSet<Language> Languages { get; set; }
+        public DbSet<Cart> Carts { get; set; }
 
         //Views
         //public DbSet<DataForInstructor> AdditionalUserData { get; set; }

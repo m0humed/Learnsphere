@@ -32,6 +32,7 @@ namespace E_Learning.Models
 
         public string? Language { get; set; }
         
+        public List<Cart>? carts { get; set; }
 
     }
 }

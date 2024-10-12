@@ -12,6 +12,7 @@ using E_Learning.Areas.Course.Data.Repositories;
 using E_Learning.Areas.Course.Data.Services;
 using E_Learning.Repositories.IReposatories;
 using E_Learning.Areas.Search.Data;
+using E_Learning.Areas.Payment.Models;
 
 namespace E_Learning
 {
@@ -33,22 +34,23 @@ namespace E_Learning
 
             #region Inject Data
             builder.Services.AddScoped<IAuthService, AuthService>();
-            builder.Services.AddScoped<ICourseRepository,CourseRepository>();
+            builder.Services.AddScoped<ICourseRepository, CourseRepository>();
             builder.Services.AddScoped<ICourseCardService, CourseCardService>();
             builder.Services.AddScoped<ICourseReviewRepository, CourseReviewRepository>();
-            builder.Services.AddScoped<ICourseViewRepository,CourseViewRepository>();
-            builder.Services.AddScoped<IDataForInstructorRepository,DataForInstructorRepository>();
-            builder.Services.AddScoped<IUserDataShortcutService,UserDataShortCutService>();
-            builder.Services.AddScoped<IUserAccountRepository,UserAccountRepository>();
-            builder.Services.AddScoped<IUserRepository , UserRepository>();
-            builder.Services.AddScoped<ICourseSectionRepository,CourseSectionRepository>();
+            builder.Services.AddScoped<ICourseViewRepository, CourseViewRepository>();
+            builder.Services.AddScoped<IDataForInstructorRepository, DataForInstructorRepository>();
+            builder.Services.AddScoped<IUserDataShortcutService, UserDataShortCutService>();
+            builder.Services.AddScoped<IUserAccountRepository, UserAccountRepository>();
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
+            builder.Services.AddScoped<ICourseSectionRepository, CourseSectionRepository>();
             builder.Services.AddScoped<ICourseFullDataViewModelService, CourseFullDataViewModelService>();
-            builder.Services.AddScoped<ICourseDiscountRepository,CourseDiscountRepository>();
-            builder.Services.AddScoped<ICourseSearchRepository,CourseSearchRepository>();
-			#endregion
+            builder.Services.AddScoped<ICourseDiscountRepository, CourseDiscountRepository>();
+            builder.Services.AddScoped<ICourseSearchRepository, CourseSearchRepository>();
+            builder.Services.AddScoped<ICartRepository, CartRepository>();
+            #endregion
 
 
-			builder.Services.AddIdentity<User, IdentityRole>(op =>
+            builder.Services.AddIdentity<User, IdentityRole>(op =>
             {
                 //op.Password.RequireDigit = true;
                 op.Password.RequiredLength = 8;
@@ -62,12 +64,21 @@ namespace E_Learning
                 op.IOTimeout = TimeSpan.FromMinutes(5);
             });
 
-			builder.Services.AddScoped<UserManager<User>>();
+            builder.Services.AddScoped<UserManager<User>>();
 
             //builder.Services.AddIdentity<User, IdentityRole>()
             //     .AddEntityFrameworkStores<ApplicationDbContext>()
             //                     .AddDefaultTokenProviders();
 
+            #region Payment
+            builder.Services.AddSingleton(op =>
+                new PayPalClient(
+                    builder.Configuration["PayPalOptions:Mode"],
+                    builder.Configuration["PayPalOptions:ClientId"],
+                    builder.Configuration["PayPalOptions:ClientSecret"]
+                    )
+            );
+            #endregion
 
             var app = builder.Build();
 

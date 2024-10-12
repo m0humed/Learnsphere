@@ -20,6 +20,7 @@ namespace E_Learning.Models
         public Enrollment? Enrollment { get; set; }
         public DataForInstructor? DataForInstructor { get; set; }
 		public List<UserAccount>? UserAccountes { get; set;}
+        public List<Cart>? carts { get; set; }
 
-	}
+    }
 }

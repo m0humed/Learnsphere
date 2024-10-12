@@ -62,6 +62,17 @@ namespace E_Learning.Repositories.Repository
             return await _context.Set<WishList>()
                 .FirstOrDefaultAsync(w => w.UserId == userId && w.CourseId == courseId);
         }
+
+        public async Task<bool> DeleteAsync(string userId, string CourseId)
+        {
+            var wishList = await _context.Set<WishList>().FirstOrDefaultAsync(x=>x.UserId == userId && x.CourseId == CourseId);
+            if (wishList != null)
+            {
+                _context.Set<WishList>().Remove(wishList);
+                return await _context.SaveChangesAsync() > 0;
+            }
+            return false;
+        }
     }
 
 }
