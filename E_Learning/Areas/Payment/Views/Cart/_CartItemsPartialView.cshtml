@@ -33,7 +33,7 @@
         <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
             <!-- Quantity -->
             <div class="d-flex mb-4" style="max-width: 300px">
-                <form class="delete-cart-form" asp-area="Payment" asp-controller="Cart" asp-action="DeleteFromCart" method="post" data-course-id="@cart?.CourseId">
+                <form class="delete-cart-form" asp-action="DeleteFromCart" method="post" data-course-id="@cart?.CourseId">
                     <button type="submit" class="btn btn-danger">Remove</button>
                 </form>
   
@@ -49,32 +49,4 @@
     </div>
     <!-- Single item -->
     <hr class="my-4" />
-}
-
-@section Scripts
-{
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            $(".delete-cart-form").submit(function (e) {
-                e.preventDefault(); 
-                var form = $(this);
-                var courseId = form.data("course-id");
-
-                $.ajax({
-                    url: form.attr("action"),
-                    type: "POST",
-                    data: { courseId: courseId },
-                    success: function (response) {
-                        $("#cartItems").html(response);
-                    },
-                    error: function () {
-                        alert("An error occurred while processing the request.");
-                    }
-                });
-            });
-        });
-    </script>
-
 }

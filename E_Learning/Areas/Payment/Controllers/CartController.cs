@@ -30,6 +30,7 @@ namespace E_Learning.Areas.Payment.Controllers
             _courseRepository = courseRepository;
         }
 
+        
         public async Task<IActionResult> Index()
         {
             var userId = GetCurrentUserId(); // Get the logged-in user's ID
@@ -48,7 +49,7 @@ namespace E_Learning.Areas.Payment.Controllers
             return _userManager.GetUserId(User); // Get the logged-in user's ID
         }
 
-        [Authorize]
+        //[Authorize]
         [HttpPost]
         public async Task<IActionResult> AddToCart(string courseId)
         {
@@ -91,13 +92,37 @@ namespace E_Learning.Areas.Payment.Controllers
             var cart = await _cartRepository.GetCartsByUserIdAsync(userId);
             var courses = await _courseRepository.GetAllAsync();
 
-            // Return updated partial views for the cart summary and course list
-            //return Json(new
-            //{
-            //    cartSummary = await view.RenderToStringAsync("_CartSummary", cart),
-            //    courseList = await view.RenderToStringAsync("_CourseList", new CourseViewModel { Courses = courses, CartCourses = cart })
-            //});
-            return Ok();
+            //Return updated partial views for the cart summary and course list
+            return Json(new
+            {
+               // cartSummary = await view.RenderToStringAsync("_CartSummary", cart),
+                courseList = await view.RenderToStringAsync("_CourseList", courses )//new CourseViewModel { Courses = courses, CartCourses = cart })
+            }); ;
+            //return Ok();
+        }
+
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> DeleteFromCart(string courseId)
+        {
+            var userId = GetCurrentUserId();
+
+            if (userId == null)
+            {
+                return RedirectToAction("Login", "Account"); // Redirect to login if not authenticated
+            }
+
+            var cartItem = await _cartRepository.GetByIdAsync(courseId, userId);
+            if (cartItem == null)
+            {
+                return NotFound();
+            }
+
+            await _cartRepository.DeleteAsync(courseId, userId);
+
+            // After deleting, return the updated cart items as a partial view
+            var updatedCartItems = await _cartRepository.GetCartsByUserIdAsync(userId);
+            return PartialView("_CartItemsPartialView", updatedCartItems);
         }
 
 

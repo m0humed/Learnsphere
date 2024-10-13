@@ -12,8 +12,9 @@
     Layout = "_Layout";
 
 }
-
+<div id="courseList">
 <partial name="_CourseList" data="@Model" />
+</div>
 
 @section Scripts
 {
@@ -53,7 +54,7 @@
                     success: function (response) {
                         //console.log("CCCCCCCCCCCCCCCC")
                         // Update the cart summary and the course list with the updated buttons
-                        $("#cartSummary").html(response.cartSummary);
+                       // $("#cartSummary").html(response.cartSummary);
                         $("#courseList").html(response.courseList);
                     },
                     error: function () {
