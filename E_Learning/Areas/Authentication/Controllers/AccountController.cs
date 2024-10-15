@@ -38,7 +38,7 @@ namespace E_Learning.Areas.Authentication.Controllers
                 else
                 {
                     var loginData = new LoginRequest { Email = model.Email, Password = model.Password, RememberMe = true };
-                    return  RedirectToAction("Login", loginData);
+                    return  RedirectToAction("ShowLogin");
                 }
             }
             return View("Register", model);  

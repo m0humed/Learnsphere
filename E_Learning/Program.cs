@@ -14,6 +14,7 @@ using E_Learning.Repositories.IReposatories;
 using E_Learning.Areas.Search.Data;
 using E_Learning.Areas.Payment.Models;
 using E_Learning.Helper;
+//using PayPal.Api;
 
 namespace E_Learning
 {
@@ -49,16 +50,18 @@ namespace E_Learning
             builder.Services.AddScoped<ICourseSearchRepository, CourseSearchRepository>();
             builder.Services.AddScoped<ICartRepository, CartRepository>();
             builder.Services.AddScoped<IViewRenderService,ViewRenderService>();
+            builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
+            builder.Services.AddScoped<IEnrollmentRepository, EnrollmentRepository>();
             #endregion
 
 
             builder.Services.AddIdentity<User, IdentityRole>(op =>
             {
-                //op.Password.RequireDigit = true;
+                op.Password.RequireDigit = true;
                 op.Password.RequiredLength = 8;
-                //op.Password.RequireUppercase = true;
-                //op.Password.RequireLowercase = true;
-                //op.Password.RequireNonAlphanumeric = true;
+                op.Password.RequireUppercase = true;
+                op.Password.RequireLowercase = true;
+                op.Password.RequireNonAlphanumeric = true;
             })
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             builder.Services.AddSession(op =>
@@ -73,12 +76,13 @@ namespace E_Learning
             //                     .AddDefaultTokenProviders();
 
             #region Payment
-            builder.Services.AddSingleton(op =>
-                new PayPalClient(
-                    builder.Configuration["PayPalOptions:Mode"],
+
+            builder.Services.AddSingleton(x =>
+                new PaypalClient(
                     builder.Configuration["PayPalOptions:ClientId"],
-                    builder.Configuration["PayPalOptions:ClientSecret"]
-                    )
+                    builder.Configuration["PayPalOptions:ClientSecret"],
+                    builder.Configuration["PayPalOptions:Mode"]
+                )
             );
             #endregion
 

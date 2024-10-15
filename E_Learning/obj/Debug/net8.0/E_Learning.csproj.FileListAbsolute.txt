@@ -2976,7 +2976,6 @@ E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\refs\System.Data.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\refs\System.Diagnostics.Contracts.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\refs\System.Diagnostics.Debug.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\refs\System.Diagnostics.DiagnosticSource.dll
-E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\refs\System.Diagnostics.EventLog.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\refs\System.Diagnostics.FileVersionInfo.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\refs\System.Diagnostics.Process.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\refs\System.Diagnostics.StackTrace.dll
@@ -3176,7 +3175,6 @@ E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\Microsoft.VisualStud
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
-E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\Mono.TextTemplating.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\Newtonsoft.Json.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\NuGet.Common.dll
@@ -3195,14 +3193,11 @@ E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\System.Composition.H
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\System.Composition.Runtime.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\System.Composition.TypedParts.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
-E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\System.Drawing.Common.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\System.Memory.Data.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\System.Runtime.Caching.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
-E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\System.Security.Permissions.dll
-E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\System.Windows.Extensions.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\af\Humanizer.resources.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\ar\Humanizer.resources.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\az\Humanizer.resources.dll
@@ -3348,11 +3343,7 @@ E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\runtimes\win-arm\nat
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
-E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
-E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 E:\_Pioneers course\Learnsphere\E_Learning\obj\Debug\net8.0\E_Learning.csproj.AssemblyReference.cache
 E:\_Pioneers course\Learnsphere\E_Learning\obj\Debug\net8.0\E_Learning.GeneratedMSBuildEditorConfig.editorconfig
 E:\_Pioneers course\Learnsphere\E_Learning\obj\Debug\net8.0\E_Learning.AssemblyInfoInputs.cache
@@ -3386,3 +3377,8 @@ E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\MimeKit.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\SendGrid.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\StarkbankEcdsa.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\PayPalCheckoutSdk.dll
+E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\PayPalHttp-Dotnet.dll
+E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+E:\_Pioneers course\Learnsphere\E_Learning\obj\Debug\net8.0\scopedcss\Areas\Payment\Views\Shared\_PaymentLayout.cshtml.rz.scp.css

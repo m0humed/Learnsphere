@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Cart>
 
 @{
-
+    Layout = "_Layout";
     var cardSummary = new { };
 }
 
@@ -22,9 +22,9 @@
                 </div>
                 
                <partial name="_PayWaysPartialView" />
-             
+               
                <partial name="_cartsummaryPartialView" data="@Model">
-
+               
                
             </div>
         </div>
@@ -48,10 +48,12 @@
                     data: { courseId: courseId },
                     success: function (response) {
                         // Update the cart items section with the returned partial view
-                        $("#cartItems").html(response);
+                        //$("#cartItems").html(response);
+                        // $("#cartsummary").html(@ViewBag.cartsummary)
+                        location.reload();
                     },
                     error: function () {
-                        location.reload();;
+                        location.reload();
                     }
                 });
             });

@@ -9473,6 +9473,46 @@
       "PackagePath": "staticwebassets\\assets\\scss\\theme\\styles.scss"
     },
     {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\bootstrabex\\assets\\brand\\bootstrap-logo-white.svg",
+      "PackagePath": "staticwebassets\\bootstrabex\\assets\\brand\\bootstrap-logo-white.svg"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\bootstrabex\\assets\\brand\\logo.png",
+      "PackagePath": "staticwebassets\\bootstrabex\\assets\\brand\\logo.png"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\bootstrabex\\assets\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrabex\\assets\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\bootstrabex\\assets\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrabex\\assets\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\bootstrabex\\assets\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\bootstrabex\\assets\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\bootstrabex\\assets\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrabex\\assets\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\bootstrabex\\assets\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\bootstrabex\\assets\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\bootstrabex\\assets\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\bootstrabex\\assets\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\bootstrabex\\checkoutStyle\\form-validation.css",
+      "PackagePath": "staticwebassets\\bootstrabex\\checkoutStyle\\form-validation.css"
+    },
+    {
+      "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\bootstrabex\\checkoutStyle\\form-validation.js",
+      "PackagePath": "staticwebassets\\bootstrabex\\checkoutStyle\\form-validation.js"
+    },
+    {
       "Id": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

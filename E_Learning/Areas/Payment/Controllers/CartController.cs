@@ -1,5 +1,4 @@
-﻿using E_Learning.Areas.Home.Models;
-using E_Learning.Helper;
+﻿using E_Learning.Helper;
 using E_Learning.Models;
 using E_Learning.Repositories.IReposatories;
 using E_Learning.Repository.IReposatories;
@@ -95,7 +94,7 @@ namespace E_Learning.Areas.Payment.Controllers
             //Return updated partial views for the cart summary and course list
             return Json(new
             {
-               // cartSummary = await view.RenderToStringAsync("_CartSummary", cart),
+                //cartSummary = await view.RenderToStringAsync("_CartSummary", cart),
                 courseList = await view.RenderToStringAsync("_CourseList", courses )//new CourseViewModel { Courses = courses, CartCourses = cart })
             }); ;
             //return Ok();
@@ -122,6 +121,7 @@ namespace E_Learning.Areas.Payment.Controllers
 
             // After deleting, return the updated cart items as a partial view
             var updatedCartItems = await _cartRepository.GetCartsByUserIdAsync(userId);
+            ViewBag.cartsummary = PartialView("_cartsummaryPartialView", updatedCartItems);
             return PartialView("_CartItemsPartialView", updatedCartItems);
         }
 

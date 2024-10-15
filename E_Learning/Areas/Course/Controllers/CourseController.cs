@@ -1,5 +1,9 @@
 ﻿using E_Learning.Areas.Course.Data.Services;
 using Microsoft.AspNetCore.Mvc;
+using E_Learning.Models;
+using E_Learning.Areas.Payment.Models;
+using System.Security.Claims;
+using E_Learning.Repository.IReposatories;
 
 namespace E_Learning.Areas.Course.Controllers
 {
@@ -7,11 +11,13 @@ namespace E_Learning.Areas.Course.Controllers
 	public class CourseController : Controller
 	{
 		private readonly ICourseFullDataViewModelService courseFullData;
+        private readonly ICourseRepository _course;
 
-		public CourseController(ICourseFullDataViewModelService courseFullData)
+        public CourseController(ICourseFullDataViewModelService courseFullData,ICourseRepository course )
         {
 			this.courseFullData = courseFullData;
-		}
+            _course = course;
+        }
 
         public IActionResult Index(string id)
 		{
@@ -24,10 +30,27 @@ namespace E_Learning.Areas.Course.Controllers
 			return View(data);
 		}
 
-		public async Task AddtoCart(string CourseId , string UserId ) 
-		{ 
+		public async Task<IActionResult> PayCourse(string Id) 
+		{
+			if(ModelState.IsValid)
+			{
+                E_Learning.Models.Course course = await _course.GetByIdAsync(Id);
 
-		
+
+                var x = new Dictionary<string, int>();
+				x[course.Id]=(int)course.Price;
+                CourseSummaryViewModel model = new CourseSummaryViewModel()
+				{
+					total = course.Price,
+					UserId = User.FindFirstValue(ClaimTypes.NameIdentifier),
+					CourseIdMony = x
+				};
+
+				return View(model);
+			}
+
+			return BadRequest();
 		}
+		
 	}
 }

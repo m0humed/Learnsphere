@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "E:\\_Pioneers course\\Learnsphere\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|e:\\_pioneers course\\learnsphere\\e_learning\\areas\\payment\\views\\cart\\_cartsummarypartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|solutionrelative:e_learning\\areas\\payment\\views\\cart\\_cartsummarypartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|e:\\_pioneers course\\learnsphere\\e_learning\\areas\\course\\views\\course\\paycourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|solutionrelative:e_learning\\areas\\course\\views\\course\\paycourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|e:\\_pioneers course\\learnsphere\\e_learning\\repositories\\repository\\socialmediarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|solutionrelative:e_learning\\repositories\\repository\\socialmediarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|e:\\_pioneers course\\learnsphere\\e_learning\\areas\\payment\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|solutionrelative:e_learning\\areas\\payment\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|e:\\_pioneers course\\learnsphere\\e_learning\\areas\\payment\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|solutionrelative:e_learning\\areas\\payment\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|e:\\_pioneers course\\learnsphere\\e_learning\\views\\shared\\_courselist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|solutionrelative:e_learning\\views\\shared\\_courselist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|e:\\_pioneers course\\learnsphere\\e_learning\\areas\\payment\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|solutionrelative:e_learning\\areas\\payment\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|e:\\_pioneers course\\learnsphere\\e_learning\\areas\\payment\\views\\cart\\_cartitemspartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|solutionrelative:e_learning\\areas\\payment\\views\\cart\\_cartitemspartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +22,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -41,72 +37,42 @@
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PayCourse.cshtml",
+              "DocumentMoniker": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Course\\Views\\Course\\PayCourse.cshtml",
+              "RelativeDocumentMoniker": "E_Learning\\Areas\\Course\\Views\\Course\\PayCourse.cshtml",
+              "ToolTip": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Course\\Views\\Course\\PayCourse.cshtml",
+              "RelativeToolTip": "E_Learning\\Areas\\Course\\Views\\Course\\PayCourse.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADAAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-15T00:21:42.303Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SocialMediaRepository.cs",
-              "DocumentMoniker": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Repositories\\Repository\\SocialMediaRepository.cs",
-              "RelativeDocumentMoniker": "E_Learning\\Repositories\\Repository\\SocialMediaRepository.cs",
-              "ToolTip": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Repositories\\Repository\\SocialMediaRepository.cs",
-              "RelativeToolTip": "E_Learning\\Repositories\\Repository\\SocialMediaRepository.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAtwBYAAAAiAAAA",
+              "Title": "CheckoutController.cs",
+              "DocumentMoniker": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Payment\\Controllers\\CheckoutController.cs",
+              "RelativeDocumentMoniker": "E_Learning\\Areas\\Payment\\Controllers\\CheckoutController.cs",
+              "ToolTip": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Payment\\Controllers\\CheckoutController.cs",
+              "RelativeToolTip": "E_Learning\\Areas\\Payment\\Controllers\\CheckoutController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACQAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T04:06:40.028Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_cartsummaryPartialView.cshtml",
-              "DocumentMoniker": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Payment\\Views\\Cart\\_cartsummaryPartialView.cshtml",
-              "RelativeDocumentMoniker": "E_Learning\\Areas\\Payment\\Views\\Cart\\_cartsummaryPartialView.cshtml",
-              "ToolTip": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Payment\\Views\\Cart\\_cartsummaryPartialView.cshtml",
-              "RelativeToolTip": "E_Learning\\Areas\\Payment\\Views\\Cart\\_cartsummaryPartialView.cshtml",
-              "ViewState": "AQIAABAAAAAAAAAAAAAowBkAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-13T04:03:36.604Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_CourseList.cshtml",
-              "DocumentMoniker": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Views\\Shared\\_CourseList.cshtml",
-              "RelativeDocumentMoniker": "E_Learning\\Views\\Shared\\_CourseList.cshtml",
-              "ToolTip": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Views\\Shared\\_CourseList.cshtml",
-              "RelativeToolTip": "E_Learning\\Views\\Shared\\_CourseList.cshtml",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAAAAkAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-13T01:49:20.98Z",
+              "WhenOpened": "2024-10-15T00:20:42.451Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Payment\\Views\\Cart\\Index.cshtml",
-              "RelativeDocumentMoniker": "E_Learning\\Areas\\Payment\\Views\\Cart\\Index.cshtml",
-              "ToolTip": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Payment\\Views\\Cart\\Index.cshtml",
-              "RelativeToolTip": "E_Learning\\Areas\\Payment\\Views\\Cart\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "_CartItemsPartialView.cshtml",
+              "DocumentMoniker": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Payment\\Views\\Cart\\_CartItemsPartialView.cshtml",
+              "RelativeDocumentMoniker": "E_Learning\\Areas\\Payment\\Views\\Cart\\_CartItemsPartialView.cshtml",
+              "ToolTip": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Payment\\Views\\Cart\\_CartItemsPartialView.cshtml",
+              "RelativeToolTip": "E_Learning\\Areas\\Payment\\Views\\Cart\\_CartItemsPartialView.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-13T01:11:00.793Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CartController.cs",
-              "DocumentMoniker": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Payment\\Controllers\\CartController.cs",
-              "RelativeDocumentMoniker": "E_Learning\\Areas\\Payment\\Controllers\\CartController.cs",
-              "ToolTip": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Payment\\Controllers\\CartController.cs",
-              "RelativeToolTip": "E_Learning\\Areas\\Payment\\Controllers\\CartController.cs",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAwwGEAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T00:56:07.89Z",
+              "WhenOpened": "2024-10-15T00:20:31.636Z",
               "EditorCaption": ""
             }
           ]
