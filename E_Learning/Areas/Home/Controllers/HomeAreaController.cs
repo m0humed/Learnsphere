@@ -18,6 +18,7 @@ namespace E_Learning.Areas.Home.Controllers
         {
             _courseCardService = courseCardService;
         }
+
         public IActionResult HomeIndex()
         {
             var ccs = _courseCardService.GetAllAsync().Result;

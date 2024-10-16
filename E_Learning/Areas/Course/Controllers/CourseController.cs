@@ -4,6 +4,7 @@ using E_Learning.Models;
 using E_Learning.Areas.Payment.Models;
 using System.Security.Claims;
 using E_Learning.Repository.IReposatories;
+using E_Learning.Repositories.Repository;
 
 namespace E_Learning.Areas.Course.Controllers
 {
@@ -51,6 +52,13 @@ namespace E_Learning.Areas.Course.Controllers
 
 			return BadRequest();
 		}
-		
-	}
+
+        [HttpGet]
+        public IActionResult ViewCourse(string Id)
+        {
+            var course = _course.GetById(Id);
+            return View("ViewCourse", course);
+        }
+
+    }
 }

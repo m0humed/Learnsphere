@@ -33,12 +33,23 @@ namespace E_Learning.Models
             builder.Entity<Cart>().HasKey(
                 c=> new {UserId=c.UserId ,CourseId = c.CourseId}
                 );
+            ///////////////////////////////
+            ///  
             
+            base.OnModelCreating(builder);
+
+            builder.Entity<ContactUs>(entity =>
+            {
+                entity.Property(e => e.CreatedAt)
+                      .HasDefaultValueSql("GETDATE()");
+
+            });
+
 
         }
         public DbSet<User> Users { get; set; }
         public DbSet<Course> Courses { get; set; }
-        public DbSet<Category> Categories { get; set; }
+       // public DbSet<Category> Categories { get; set; }
         public DbSet<Certificate> Certificates { get; set; }
         public DbSet<CoursePreview> CoursePreviews { get; set; }
         public DbSet<CourseSection> CourseSections { get; set; }
@@ -56,10 +67,11 @@ namespace E_Learning.Models
         public DbSet<SocialMedia> socialMedias { get; set; }
         public DbSet<UserAccount> userAccounts { get; set; }
         public DbSet<DataForInstructor> DataForInstructors { get; set; }
-        public DbSet<SuperCategory> SuperCategories { get; set; }
+       // public DbSet<SuperCategory> SuperCategories { get; set; }
         public DbSet<CourseLevel> CourseLevels { get; set; }
         public DbSet<Language> Languages { get; set; }
         public DbSet<Cart> Carts { get; set; }
+        public DbSet<AboutUs> AboutUs { get; set; }
 
         //Views
         //public DbSet<DataForInstructor> AdditionalUserData { get; set; }

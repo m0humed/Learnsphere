@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FcBVy2+1gbCYL9ljzthCLNdE9t8Q9VX+LIxtt9+5wNE=",
+  "Hash": "f2EpnHUP2JiGDswr4LAnGI3+cvVtassGkEh90/fSPpQ=",
   "Source": "E_Learning",
   "BasePath": "_content/E_Learning",
   "Mode": "Default",
@@ -45064,6 +45064,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\bootstrabex\\checkoutStyle\\form-validation.js"
+    },
+    {
+      "Identity": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\css\\CourseDashboard.css",
+      "SourceId": "E_Learning",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\",
+      "BasePath": "_content/E_Learning",
+      "RelativePath": "css/CourseDashboard.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\CourseDashboard.css"
     },
     {
       "Identity": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\css\\site.css",

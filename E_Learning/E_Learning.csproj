@@ -41,8 +41,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Areas\Authentication\Data\" />
     <Folder Include="Areas\Payment\Data\" />
+    <Folder Include="Views\Category\www.google-analytics.com\" />
+    <Folder Include="Views\Course\" />
     <Folder Include="wwwroot\Images\Courses\" />
   </ItemGroup>
 
@@ -59,6 +63,12 @@
     <None Include="Areas\Payment\Views\Checkout\Index.cshtml" />
     <None Include="Areas\Payment\Views\Checkout\Processing.cshtml" />
     <None Include="Areas\Payment\Views\Checkout\Success.cshtml" />
+    <None Include="Views\AboutUs\Index.cshtml" />
+    <None Include="Views\Category\Index.cshtml" />
+    <None Include="Views\ContactUs\Create.cshtml" />
+    <None Include="Views\ContactUs\Index.cshtml" />
+    <None Include="Views\ContactUs\Success.cshtml" />
+    <None Include="Areas\Course\Views\Course\ViewCourse.cshtml" />
   </ItemGroup>
 
   <ItemGroup>

@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace E_Learning.Areas.Admin.Controllers
 {
-    [Authorize(Roles ="Admin")]
+   // [Authorize(Roles ="Admin")]
     [Area("Admin")]
     public class AdminController : Controller
     {
@@ -12,12 +12,18 @@ namespace E_Learning.Areas.Admin.Controllers
                 
         }
 
-        [Authorize(Roles ="HeadAdmin")]
+        public async Task<IActionResult> Index()
+        {
+            return View("Index");
+        }
+
+       // [Authorize(Roles ="Admin")]
         public async Task<IActionResult> AddAdmin()
         {
             return View();
         }
-        [Authorize(Roles ="HeadAdmin")]
+
+       // [Authorize(Roles ="Admin")]
         public async Task<IActionResult> DeleteAdmin()
         {
             return View();

@@ -111,9 +111,16 @@ namespace E_Learning
 				);
 			});
 
-			app.MapControllerRoute(
+            //app.UseEndpoints(endpoints =>
+            //{
+            //    endpoints.MapControllerRoute(
+            //        name: "Home",
+            //        pattern: "{controller=Home}/{action=Index}/{id?}");
+            //});
+
+            app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{area=Home}/{controller=HomeArea}/{action=HomeIndex}");
 
 
 

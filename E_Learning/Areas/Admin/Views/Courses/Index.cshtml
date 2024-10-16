@@ -1,0 +1,32 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+
+<div class="card-columns">
+    <div class="card bg-primary">
+        <div class="card-body text-center">
+            <p class="card-text">Courses From Instructors</p>
+        </div>
+    </div>
+
+    <br />
+
+    <div class="card bg-warning">
+        <div class="card-body text-center">
+            <p class="card-text">Add Courses</p>
+        </div>
+    </div>
+
+    <br />
+    <a asp-area="Admin" asp-controller="Courses" asp-action="CoursesList">
+    <div class="card bg-success">
+        <div class="card-body text-center">
+            <p class="card-text">View Courses</p>
+        </div>
+    </div>
+    </a>
+</div>

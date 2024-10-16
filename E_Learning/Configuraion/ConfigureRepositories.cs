@@ -8,7 +8,7 @@ namespace E_Learning.Configuraion
 
         public static void RegisterRepositories(this IServiceCollection services)
         {
-            services.AddScoped<ICategoryRepository, CategoryRepository>();
+            //services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<ICertificateRepository, CertificateRepository>();
             services.AddScoped<ICourseCuponsRepository, CourseCuponsRepository>();
             services.AddScoped<ICourseDiscountRepository, CourseDiscountRepository>();

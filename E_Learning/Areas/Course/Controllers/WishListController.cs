@@ -83,5 +83,7 @@ namespace E_Learning.Areas.Course.Controllers
             return Json(new { success = true, wishlistCount = wishlistCount });
         }
 
+
+
     }
 }

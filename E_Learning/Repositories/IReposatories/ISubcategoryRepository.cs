@@ -3,7 +3,7 @@ namespace E_Learning.Repository.IReposatories
 {
     public interface ISubCategoryRepository : IRepository<SubCategory>
     {
-        Task<IEnumerable<SubCategory>> GetSubCategoriesByCategoryIdAsync(string categoryId);
+        //Task<IEnumerable<SubCategory>> GetSubCategoriesByCategoryIdAsync(string categoryId);
     }
 
 }

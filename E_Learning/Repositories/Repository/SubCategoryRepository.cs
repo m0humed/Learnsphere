@@ -53,13 +53,13 @@ namespace E_Learning.Repositories.Repository
             }
         }
 
-        public async Task<IEnumerable<SubCategory>> GetSubCategoriesByCategoryIdAsync(string categoryId)
-        {
-            return await _context.Set<SubCategory>()
-                .Where(sc => sc.CategoryId == categoryId)
-                .Include(sc => sc.Courses) // Include related courses
-                .ToListAsync();
-        }
+        //public async Task<IEnumerable<SubCategory>> GetSubCategoriesByCategoryIdAsync(string categoryId)
+        //{
+        //    return await _context.Set<SubCategory>()
+        //        .Where(sc => sc.CategoryId == categoryId)
+        //        .Include(sc => sc.Courses) // Include related courses
+        //        .ToListAsync();
+        //}
 
        
     }

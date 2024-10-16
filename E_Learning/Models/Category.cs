@@ -6,11 +6,13 @@ namespace E_Learning.Models
     {
         public string Id { get; set; }
         public string Name { get; set; } = null!;
-        public List<SubCategory>? SubCategories {  get; set; }
+        //public List<SubCategory>? SubCategories {  get; set; }
+        
+       // public List<Course>? Courses {  get; set; }
 
-        [ForeignKey(nameof(SuperCategory))]
-        public string? SuperCategotryId { get; set; }
-        public SuperCategory? SuperCategory { get; set; }
+        //  [ForeignKey(nameof(SuperCategory))]
+        // public string? SuperCategotryId { get; set; }
+        //  public SuperCategory? SuperCategory { get; set; }
 
         public Category() 
         { 

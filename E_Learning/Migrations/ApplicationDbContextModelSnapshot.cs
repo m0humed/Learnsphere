@@ -105,6 +105,55 @@ namespace E_Learning.Migrations
                     b.ToView("CourseviewModel", (string)null);
                 });
 
+            modelBuilder.Entity("E_Learning.Models.AboutUs", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ContactEmail")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ContactPhone")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Content")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("FacebookLink")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LinkedInLink")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Mission")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TwitterLink")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Vision")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("AboutUs");
+                });
+
             modelBuilder.Entity("E_Learning.Models.Cart", b =>
                 {
                     b.Property<string>("UserId")
@@ -118,25 +167,6 @@ namespace E_Learning.Migrations
                     b.HasIndex("CourseId");
 
                     b.ToTable("Carts");
-                });
-
-            modelBuilder.Entity("E_Learning.Models.Category", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("SuperCategotryId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("SuperCategotryId");
-
-                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("E_Learning.Models.Certificate", b =>
@@ -169,6 +199,40 @@ namespace E_Learning.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Certificates");
+                });
+
+            modelBuilder.Entity("E_Learning.Models.ContactUs", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETDATE()");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Message")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Subject")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ContactUs");
                 });
 
             modelBuilder.Entity("E_Learning.Models.Course", b =>
@@ -618,33 +682,13 @@ namespace E_Learning.Migrations
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("CategoryId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CategoryId");
-
                     b.ToTable("SubCategories");
-                });
-
-            modelBuilder.Entity("E_Learning.Models.SuperCategory", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("SuperCategories");
                 });
 
             modelBuilder.Entity("E_Learning.Models.User", b =>
@@ -925,15 +969,6 @@ namespace E_Learning.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("E_Learning.Models.Category", b =>
-                {
-                    b.HasOne("E_Learning.Models.SuperCategory", "SuperCategory")
-                        .WithMany("Categories")
-                        .HasForeignKey("SuperCategotryId");
-
-                    b.Navigation("SuperCategory");
-                });
-
             modelBuilder.Entity("E_Learning.Models.Certificate", b =>
                 {
                     b.HasOne("E_Learning.Models.Course", "Course")
@@ -1124,17 +1159,6 @@ namespace E_Learning.Migrations
                     b.Navigation("CourseSection");
                 });
 
-            modelBuilder.Entity("E_Learning.Models.SubCategory", b =>
-                {
-                    b.HasOne("E_Learning.Models.Category", "Category")
-                        .WithMany("SubCategories")
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Category");
-                });
-
             modelBuilder.Entity("E_Learning.Models.UserAccount", b =>
                 {
                     b.HasOne("E_Learning.Models.SocialMedia", "SocialMedia")
@@ -1224,11 +1248,6 @@ namespace E_Learning.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("E_Learning.Models.Category", b =>
-                {
-                    b.Navigation("SubCategories");
-                });
-
             modelBuilder.Entity("E_Learning.Models.Course", b =>
                 {
                     b.Navigation("Previews");
@@ -1258,11 +1277,6 @@ namespace E_Learning.Migrations
             modelBuilder.Entity("E_Learning.Models.SubCategory", b =>
                 {
                     b.Navigation("Courses");
-                });
-
-            modelBuilder.Entity("E_Learning.Models.SuperCategory", b =>
-                {
-                    b.Navigation("Categories");
                 });
 
             modelBuilder.Entity("E_Learning.Models.User", b =>

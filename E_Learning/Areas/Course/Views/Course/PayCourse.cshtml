@@ -39,7 +39,6 @@
                                 <form  asp-area="Payment" asp-controller="Checkout" asp-action="Index" method="get" >
                                     <input name="Csummary.total" value="@Model.total" hidden />
                                     <input name="Csummary.UserId" value="@Model.UserId" hidden />
-
                                     <input type="text" name="Csummary.CourseIdMony[@Model.CourseIdMony.Keys.First()]"
                                            value="@Model.CourseIdMony.Values.First()" hidden />
 

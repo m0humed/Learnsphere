@@ -19,10 +19,10 @@ namespace E_Learning.Models
         public int? Rating { get; set; }
         public string Image { get; set; }
         [ForeignKey("SubCategory")]
-        public string SubCategoryId {  get; set; }
-        public SubCategory  SubCategory  { get; set; }
+        public string SubCategoryId { get; set; }
+        public SubCategory? SubCategory { get; set; }
         public List<CoursePreview>? Previews { get; set; }
-        public List<CourseSection> courseSections { get; set; }
+        public List<CourseSection>? courseSections { get; set; }
         public List<WishList>? WishLists { get; set; }
 
         [ForeignKey("user")]

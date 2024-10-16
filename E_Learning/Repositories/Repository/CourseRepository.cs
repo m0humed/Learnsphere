@@ -95,7 +95,11 @@ namespace E_Learning.Repositories.Repository
             return string.Join(" ", query.Split(' ').Where(word => !stopWords.Contains(word.ToLower())));
         }
 
-    
+        public Course GetById(string id)
+        {
+            return _context.Set<Course>().Include(c => c.user).ThenInclude(u => u.DataForInstructor).Include(c => c.courseSections).ThenInclude(s => s.SectionLessons).FirstOrDefault(c => c.Id == id);
+        }
+
     }
 
 }

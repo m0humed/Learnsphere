@@ -6,9 +6,9 @@ namespace E_Learning.Models
     {
         public string Id { get; set; }
         public string Title { get; set; }
-        [ForeignKey("Category")]
-        public string CategoryId { get; set; }
-        public Category Category { get; set; }
+       // [ForeignKey("Category")]
+       // public string CategoryId { get; set; }
+       // public Category Category { get; set; }
         public List<Course> Courses { get; set; }
        
     }
