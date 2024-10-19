@@ -72,7 +72,7 @@ namespace E_Learning.Models
         public DbSet<Language> Languages { get; set; }
         public DbSet<Cart> Carts { get; set; }
         public DbSet<AboutUs> AboutUs { get; set; }
-
+        public DbSet<Status> Statuses { get; set; }
         //Views
         //public DbSet<DataForInstructor> AdditionalUserData { get; set; }
         //public DbSet<InstructorStatisticsVM> InstructorStatistics { get; set; }

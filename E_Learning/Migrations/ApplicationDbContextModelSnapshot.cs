@@ -677,6 +677,20 @@ namespace E_Learning.Migrations
                     b.ToTable("socialMedias");
                 });
 
+            modelBuilder.Entity("E_Learning.Models.Status", b =>
+                {
+                    b.Property<string>("NameId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("StatusDescription")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("NameId");
+
+                    b.ToTable("Statuses");
+                });
+
             modelBuilder.Entity("E_Learning.Models.SubCategory", b =>
                 {
                     b.Property<string>("Id")

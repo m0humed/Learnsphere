@@ -11,9 +11,9 @@
         //public string NumOfLessons { get; set; }
         public string level { get; set; }
         public int numOfStudents { get; set; }
-        public string CourseImage { get; set; }
-        public string trailerVideoUrl { get; set; }
-        public int numofSections { get; set; }
+        public string? CourseImage { get; set; }
+        public string? trailerVideoUrl { get; set; }
+        public int? numofSections { get; set; }
         public string SubCategoryId { get; set; }
 		public string SubCategoryName { get; set; }
 

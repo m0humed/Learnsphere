@@ -28,7 +28,7 @@ namespace E_Learning.Areas.Course.Data.Services
 		public Task<CourseFullDataViewModel> GetFullDataByIdAsync(string Id)
 		{
 			CourseFullDataViewModel cs = new();
-			cs.CourseView = this.courseView.GetByIdAsync(Id).Result!;
+			cs.CourseView = this.courseView.GetByIdAsync(Id)?.Result!;
             cs.UserDataShortcutView = this.userData.GetDatabyid(cs.CourseView.InstructorId).Result;
             cs.Review = this.courseReview.GetCourseReviews(Id).ToList();
 			cs.Sections = this.courseSection.GetSectionsByCourseIdLazyAsync(Id).Result.ToList();

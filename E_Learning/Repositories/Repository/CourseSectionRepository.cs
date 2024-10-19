@@ -36,7 +36,7 @@ namespace E_Learning.Repositories.Repository
                 Old.Title = New.Title;
                 Old.order = New.order;
             }
-            _context.Set<CourseSection>().Update(Old );
+            _context.Set<CourseSection>().Update(Old);
             await _context.SaveChangesAsync();
         }
 

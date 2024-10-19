@@ -17,7 +17,7 @@ namespace E_Learning.Models
         public string? CourseLevel { get; set; }
         public int NumberOfRegisters { get; set; } = 0;
         public int? Rating { get; set; }
-        public string Image { get; set; }
+        public string Image { get; set; } 
         [ForeignKey("SubCategory")]
         public string SubCategoryId { get; set; }
         public SubCategory? SubCategory { get; set; }

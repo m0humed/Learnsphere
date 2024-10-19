@@ -13,7 +13,7 @@
             <p class="mb-4">@Model.Summary</p>
             <div class="text-center mb-3">
                 <ul class="column-list list-unstyled mx-auto d-inline-block">
-                    @foreach (var course in Model.Description.Split(".\n"))
+                    @foreach (var course in Model.Description.Split("\n"))
                     {
                     <li><i class="theme-check-icon fas fa-check me-2"></i>@course.Trim()</li>
                     }
@@ -24,9 +24,10 @@
             </div>
             <div class="video-container">
                 <div class="ratio ratio-16x9">
-                    <iframe width="560" height="315" src="@Model.trailerVideoUrl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hZ1DASYd9rk?si=DtSXgLwNLCubb96D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-            </div><!--//video-container-->
+            </div>
+            <!--//video-container-->
 
         </div><!--//section-col-max-->
     </div><!--//container-->

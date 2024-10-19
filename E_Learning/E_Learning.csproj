@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <Content Remove="Areas\Payment\Views\Cart\_PayWaysPartialView.cshtml" />
+    <Content Remove="Views\Shared\_AddtoCartBTN.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -41,8 +42,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Areas\Authentication\Data\" />
     <Folder Include="Areas\Payment\Data\" />
     <Folder Include="Views\Category\www.google-analytics.com\" />
@@ -56,6 +55,7 @@
 
   <ItemGroup>
     <_ContentIncludedByDefault Remove="Areas\Payment\Views\Cart\_PayWaysPartialView.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\_AddtoCartBTN.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -69,6 +69,7 @@
     <None Include="Views\ContactUs\Index.cshtml" />
     <None Include="Views\ContactUs\Success.cshtml" />
     <None Include="Areas\Course\Views\Course\ViewCourse.cshtml" />
+    <None Include="Views\Shared\_AddtoCartBTN.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -80,6 +81,10 @@
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\_AddtoCartBTN.cshtml" />
   </ItemGroup>
 
 </Project>

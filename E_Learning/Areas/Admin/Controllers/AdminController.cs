@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace E_Learning.Areas.Admin.Controllers
 {
-   // [Authorize(Roles ="Admin")]
+    [Authorize]
     [Area("Admin")]
     public class AdminController : Controller
     {

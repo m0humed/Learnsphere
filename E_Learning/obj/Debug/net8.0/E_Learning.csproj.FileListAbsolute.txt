@@ -3382,3 +3382,4 @@ E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\PayPalHttp-Dotnet.dl
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
 E:\_Pioneers course\Learnsphere\E_Learning\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
 E:\_Pioneers course\Learnsphere\E_Learning\obj\Debug\net8.0\scopedcss\Areas\Payment\Views\Shared\_PaymentLayout.cshtml.rz.scp.css
+E:\_Pioneers course\Learnsphere\E_Learning\obj\Debug\net8.0\scopedcss\Areas\Admin\Views\Shared\_AdminLayout.cshtml.rz.scp.css

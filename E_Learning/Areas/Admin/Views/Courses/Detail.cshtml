@@ -1,0 +1,67 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model Course
+
+<div class="card-columns">
+   
+
+    <a asp-area="Admin" asp-controller="Section" asp-action="Index" asp-route-id="@Model.Id">
+        <div class="card bg-success">
+            <div class="card-body text-center">
+                <p class="card-text">Sections</p>
+            </div>
+        </div>
+    </a>
+
+    <br />
+
+    <a asp-area="Admin" asp-controller="Courses" asp-action="Create">
+    <div class="card bg-primary">
+        <div class="card-body text-center">
+            <p class="card-text">Course Image</p>
+        </div>
+    </div>
+    </a>
+
+    <br />
+    <a asp-area="Admin" asp-controller="Courses" asp-action="Create">
+        <div class="card bg-warning">
+            <div class="card-body text-center">
+                <p class="card-text">update Data</p>
+            </div>
+        </div>
+
+    </a>
+
+    <br />
+    <a asp-area="Admin" asp-controller="Courses" asp-action="CoursesList">
+        <div class="card bg-success">
+            <div class="card-body text-center">
+                <p class="card-text">Coupon</p>
+            </div>
+        </div>
+    </a>
+      
+    <a asp-area="Admin" asp-controller="Courses" asp-action="Create">
+    <div class="card bg-primary">
+        <div class="card-body text-center">
+            <p class="card-text">Discount</p>
+        </div>
+    </div>
+    </a>
+    <br />
+    <a asp-area="Admin" asp-controller="Courses" asp-action="Create">
+        <div class="card bg-warning">
+            <div class="card-body text-center">
+                <p class="card-text">Trailer Video</p>
+            </div>
+        </div>
+    </a>
+
+
+    
+</div>

@@ -10,7 +10,6 @@ namespace E_Learning.Repositories.Repository
 
 
         public CourseRepository(ApplicationDbContext  context)
-
         {
             _context = context;
         }
@@ -37,7 +36,18 @@ namespace E_Learning.Repositories.Repository
                 old.CourseLevel = New.CourseLevel;
                 old.Title = New.Title;
                 old.Duration = New.Duration;
+                old.Title = New.Title;
+                old.Description = New.Description;
+                old.CourseLevel = New.CourseLevel;
+                old.Status  = New.Status;
+                old.Image = New.Image;
+                old.Summary = New.Summary;
+                old.Language = New.Language;
+                old.SubCategoryId = New.SubCategoryId;
+                old.InstructorId = New.InstructorId;
+                old.Price = New.Price;
             }
+            New.Id = Guid.NewGuid().ToString();
             _context.Set<Course>().Update(old);
             await _context.SaveChangesAsync();
         }

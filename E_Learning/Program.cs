@@ -14,6 +14,7 @@ using E_Learning.Repositories.IReposatories;
 using E_Learning.Areas.Search.Data;
 using E_Learning.Areas.Payment.Models;
 using E_Learning.Helper;
+using E_Learning.Areas.Admin.Data.Services;
 //using PayPal.Api;
 
 namespace E_Learning
@@ -52,6 +53,13 @@ namespace E_Learning
             builder.Services.AddScoped<IViewRenderService,ViewRenderService>();
             builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
             builder.Services.AddScoped<IEnrollmentRepository, EnrollmentRepository>();
+            builder.Services.AddScoped<ICourseLevelRepository, CourseLevelRepository>();
+            builder.Services.AddScoped<ISubCategoryRepository, SubCategoryRepository>();
+            builder.Services.AddScoped<ILanguageRepository, LanguageRepository>();
+            builder.Services.AddScoped<IStatusRepository, StatusRepository>();
+            builder.Services.AddScoped<ICourseListServices, CourseListServices>();
+            builder.Services.AddScoped<ISectionLessonRepository, SectionLessonRepository>();
+
             #endregion
 
 
@@ -111,12 +119,12 @@ namespace E_Learning
 				);
 			});
 
-            //app.UseEndpoints(endpoints =>
-            //{
-            //    endpoints.MapControllerRoute(
-            //        name: "Home",
-            //        pattern: "{controller=Home}/{action=Index}/{id?}");
-            //});
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "Home",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
+            });
 
             app.MapControllerRoute(
                 name: "default",

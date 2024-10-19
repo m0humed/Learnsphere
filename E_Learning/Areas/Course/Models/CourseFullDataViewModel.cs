@@ -9,7 +9,7 @@ namespace E_Learning.Areas.Course.Models
 
         public CourseView CourseView { get; set; } = null!;
 
-        public List<CourseSection> Sections { get; set; } = null!;
+        public List<CourseSection>? Sections { get; set; } = null!;
 
         public UserDataShortcutViewModel UserDataShortcutView { get; set; } = null!;
         
