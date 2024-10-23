@@ -4,7 +4,7 @@ namespace E_Learning.Repository.IReposatories
 {
     public interface ICourseDiscountRepository : IRepository<CourseDiscount>
     {
-        Task<IEnumerable<CourseDiscount>> GetDiscountsByCourseIdAsync(string courseId);
+        Task<CourseDiscount> GetDiscountsByCourseIdAsync(string courseId);
         Task<IEnumerable<CourseDiscount>> GetActiveDiscountsAsync();
     }
 

@@ -5,9 +5,15 @@
     ViewBag.page = "Courses";
 }
 
-<a href="/Admin/Courses/Create" class="btn btn-primary">Add</a>
-<a href="/Admin/Courses/Index" class="btn btn-primary">Back</a>
+<a href="/Admin/Courses/Create" class="btn btn-primary">Add Course</a>
+
+@if (User.IsInRole("Admin") || User.IsInRole("Instructor"))
+{
+    <a href="/Admin/Courses/Index" class="btn btn-primary">Courses DashBoard</a>
+}
+
 <div>
+    <br />
     <hr />
     <table id="coursesTable" class="table table-striped">
         <thead class="thead-dark">

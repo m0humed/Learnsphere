@@ -19,9 +19,9 @@ namespace E_Learning.Areas.Home.Controllers
             _courseCardService = courseCardService;
         }
 
-        public IActionResult HomeIndex()
+        public async Task<IActionResult> HomeIndex()
         {
-            var ccs = _courseCardService.GetAllAsync().Result;
+            var ccs = await _courseCardService.GetAllAsync();
             return View("Area_Index", ccs);
         }
     }

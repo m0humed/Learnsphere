@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "E:\\_Pioneers course\\Learnsphere\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|e:\\_pioneers course\\learnsphere\\e_learning\\areas\\admin\\views\\lesson\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|solutionrelative:e_learning\\areas\\admin\\views\\lesson\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|e:\\_pioneers course\\learnsphere\\e_learning\\areas\\course\\views\\course\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|solutionrelative:e_learning\\areas\\course\\views\\course\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|e:\\_pioneers course\\learnsphere\\e_learning\\areas\\course\\views\\course\\_morecoursespartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|solutionrelative:e_learning\\areas\\course\\views\\course\\_morecoursespartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|e:\\_pioneers course\\learnsphere\\e_learning\\areas\\home\\views\\homearea\\area_index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|solutionrelative:e_learning\\areas\\home\\views\\homearea\\area_index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|e:\\_pioneers course\\learnsphere\\e_learning\\repositories\\repository\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A980BA55-570C-44BF-B824-92B01EFE7D64}|E_Learning\\E_Learning.csproj|solutionrelative:e_learning\\repositories\\repository\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,14 +44,50 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Admin\\Views\\Lesson\\Index.cshtml",
-              "RelativeDocumentMoniker": "E_Learning\\Areas\\Admin\\Views\\Lesson\\Index.cshtml",
-              "ToolTip": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Admin\\Views\\Lesson\\Index.cshtml",
-              "RelativeToolTip": "E_Learning\\Areas\\Admin\\Views\\Lesson\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAcAAAA",
+              "DocumentMoniker": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Course\\Views\\Course\\Index.cshtml",
+              "RelativeDocumentMoniker": "E_Learning\\Areas\\Course\\Views\\Course\\Index.cshtml",
+              "ToolTip": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Course\\Views\\Course\\Index.cshtml",
+              "RelativeToolTip": "E_Learning\\Areas\\Course\\Views\\Course\\Index.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACEAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-18T22:53:40.138Z",
+              "WhenOpened": "2024-10-23T18:36:07.036Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_MoreCoursesPartialView.cshtml",
+              "DocumentMoniker": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Course\\Views\\Course\\_MoreCoursesPartialView.cshtml",
+              "RelativeDocumentMoniker": "E_Learning\\Areas\\Course\\Views\\Course\\_MoreCoursesPartialView.cshtml",
+              "ToolTip": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Course\\Views\\Course\\_MoreCoursesPartialView.cshtml",
+              "RelativeToolTip": "E_Learning\\Areas\\Course\\Views\\Course\\_MoreCoursesPartialView.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACEAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-23T18:33:58.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Area_Index.cshtml",
+              "DocumentMoniker": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Home\\Views\\HomeArea\\Area_Index.cshtml",
+              "RelativeDocumentMoniker": "E_Learning\\Areas\\Home\\Views\\HomeArea\\Area_Index.cshtml",
+              "ToolTip": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Areas\\Home\\Views\\HomeArea\\Area_Index.cshtml",
+              "RelativeToolTip": "E_Learning\\Areas\\Home\\Views\\HomeArea\\Area_Index.cshtml",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAABAAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-23T18:33:18.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CartRepository.cs",
+              "DocumentMoniker": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Repositories\\Repository\\CartRepository.cs",
+              "RelativeDocumentMoniker": "E_Learning\\Repositories\\Repository\\CartRepository.cs",
+              "ToolTip": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\Repositories\\Repository\\CartRepository.cs",
+              "RelativeToolTip": "E_Learning\\Repositories\\Repository\\CartRepository.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAAACgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T17:59:58.427Z"
             }
           ]
         },

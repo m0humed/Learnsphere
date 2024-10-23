@@ -47,7 +47,10 @@ namespace E_Learning.Repositories.Repository
                 old.InstructorId = New.InstructorId;
                 old.Price = New.Price;
             }
-            New.Id = Guid.NewGuid().ToString();
+            if (New != old)
+            {
+                New.Id = Guid.NewGuid().ToString();
+            }
             _context.Set<Course>().Update(old);
             await _context.SaveChangesAsync();
         }

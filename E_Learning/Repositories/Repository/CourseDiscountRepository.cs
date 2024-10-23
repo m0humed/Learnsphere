@@ -51,11 +51,10 @@ namespace E_Learning.Repositories.Repository
             }
         }
 
-        public async Task<IEnumerable<CourseDiscount>> GetDiscountsByCourseIdAsync(string courseId)
+        public async Task<CourseDiscount> GetDiscountsByCourseIdAsync(string courseId)
         {
             return await _context.Set<CourseDiscount>()
-                .Where(cd => cd.CourseId == courseId)
-                .ToListAsync();
+                .FirstOrDefaultAsync(cd => cd.CourseId == courseId && cd.ExpireDate <= DateTime.Now);
         }
 
         public async Task<IEnumerable<CourseDiscount>> GetActiveDiscountsAsync()

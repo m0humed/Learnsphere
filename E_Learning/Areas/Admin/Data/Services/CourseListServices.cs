@@ -69,7 +69,7 @@ namespace E_Learning.Areas.Admin.Data.Services
         {
             var courses = await course.GetAllAsync();
             var result = courses.Where(c=>c.InstructorId==InstructorId).ToList();
-            var ListCourses = Convert(courses);
+            var ListCourses = Convert(result);
             return ListCourses;
         }
 

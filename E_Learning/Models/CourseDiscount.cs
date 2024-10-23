@@ -11,5 +11,6 @@ namespace E_Learning.Models
         [ForeignKey("Course")]
         public string CourseId { get; set; }
         public Course Course { get; set; }
+
     }
 }

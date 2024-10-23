@@ -48,7 +48,6 @@ namespace E_Learning.Areas.Home.Data
                 details.netPrice = course.Result.Price;
 
 			}
-
             return details;
         }
 

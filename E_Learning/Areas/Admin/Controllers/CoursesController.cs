@@ -18,6 +18,8 @@ namespace E_Learning.Areas.Admin.Controllers
         private readonly IStatusRepository statusRepository;
         private readonly IWebHostEnvironment webHostEnvironment;
         private readonly ICourseListServices courseList;
+        private readonly ICoursePreviewRepository _coursePreview;
+        private readonly ICourseDiscountRepository _descount;
 
         public CoursesController(ICourseLevelRepository courseLevelRepository, 
             ISubCategoryRepository subCategoryRepository
@@ -25,7 +27,9 @@ namespace E_Learning.Areas.Admin.Controllers
             ICourseRepository courseRepository,
             IStatusRepository statusRepository,
             IWebHostEnvironment webHostEnvironment,
-            ICourseListServices courseList
+            ICourseListServices courseList,
+            ICourseDiscountRepository _descount,
+            ICoursePreviewRepository coursePreview
             )
             
         {
@@ -36,6 +40,8 @@ namespace E_Learning.Areas.Admin.Controllers
             this.statusRepository = statusRepository;
             this.webHostEnvironment = webHostEnvironment;
             this.courseList = courseList;
+            this._coursePreview = coursePreview;
+            this._descount = _descount;
         }
 
         public async Task<IActionResult> Index()
@@ -43,10 +49,18 @@ namespace E_Learning.Areas.Admin.Controllers
             return View("Index");
         }
 
+        [HttpPost]
+        public async Task<IActionResult> CoursesList(string userId)
+        {
+            var courses = await courseList.GetCoursesForInstructorAsync(userId);
+            return View("CoursesList" , courses);
+        }
+
+        [HttpGet]
         public async Task<IActionResult> CoursesList()
         {
             var courses = await courseList.GetAllCoursesAsync();
-            return View("CoursesList" , courses);
+            return View("CoursesList", courses);
         }
 
         private async Task fillCourse(Models.CourseViewModel model)
@@ -242,6 +256,7 @@ namespace E_Learning.Areas.Admin.Controllers
             return BadRequest();
         }
 
+      //  [Route("course/details/{id}", Name = "CourseDetails")]
         public async Task<IActionResult> Detail(string id)
         {
             if (ModelState.IsValid)
@@ -291,6 +306,139 @@ namespace E_Learning.Areas.Admin.Controllers
         //{
 
         //}
+        [HttpGet]
+        public async Task<IActionResult> ChangeImage(string id)
+        {
+            var Course = await courseRepository.GetByIdAsync(id);
+            var image = new ChangeImageViewModel
+            {
+                ImageUrl = Course.Image,
+                CourseId = id
+            };
+            return View(image);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ChangeImage(ChangeImageViewModel changed)
+        {
+            var course = await courseRepository.GetByIdAsync(changed.CourseId);
+
+            if (changed.Image != null && changed.Image.Length > 0)
+            {
+                var uploadsFolder = Path.Combine(webHostEnvironment.WebRootPath, "images", "Courses");
+
+                // Ensure the directory exists
+                if (!Directory.Exists(uploadsFolder))
+                {
+                    Directory.CreateDirectory(uploadsFolder);
+                }
+
+                // Create the file path using the CourseId as the name
+                var fileName = $"{changed.CourseId}{Path.GetExtension(changed.Image.FileName)}";
+                var filePath = Path.Combine(uploadsFolder, fileName);
+
+                // Delete the old image if it exists
+                if (!string.IsNullOrEmpty(course.Image))
+                {
+                    var oldImagePath = Path.Combine(uploadsFolder, course.Image);
+                    if (System.IO.File.Exists(oldImagePath))
+                    {
+                        System.IO.File.Delete(oldImagePath);
+                    }
+                }
+
+                // Save the new image to the target location
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    await changed.Image.CopyToAsync(fileStream);
+                }
+
+                // Save the new image path in the course entity
+                course.Image = fileName;
+            }
+            else
+            {
+                // If no new image is uploaded, retain the existing image path
+                course.Image = course.Image;
+            }
+
+            // Save the course data
+            try
+            {
+
+                await courseRepository.UpdateAsync(course, course);
+                return RedirectToAction("ChangeImage", "Courses", new { id = course.Id });
+            }
+            catch
+            {
+                return BadRequest();
+            }
+
+        }
+
+
+        [HttpGet]
+        public async Task<IActionResult> Trailer(string Id)
+        {
+            var trailerVideo = await _coursePreview.GetPreviewsByCourseIdAsync(Id);
+            if (trailerVideo == null)
+            {
+                trailerVideo = new CoursePreview
+                {
+                    CourseId = Id
+                };
+        
+            }
+            return View(trailerVideo);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Trailer(CoursePreview trailer)
+        {
+            if (ModelState.IsValid) 
+            {
+                var Oldtrailer = await _coursePreview.GetPreviewsByCourseIdAsync(trailer.Id);
+                if(Oldtrailer == null)
+                {
+                    try
+                    {
+                        await _coursePreview.AddAsync(trailer);
+                        return View(trailer);
+                    }
+                    catch
+                    {
+                        return View(Oldtrailer);
+                    }
+                }
+                else
+                {
+                    try
+                    {
+                        _coursePreview.UpdateAsync(Oldtrailer, trailer);
+                        return View(trailer);
+                    }
+                    catch
+                    {
+                        return View(Oldtrailer);
+                    }
+                }
+            }
+
+            return View(trailer);
+        }
+
+
+        public async Task<IActionResult> Discount(string Id)
+        {
+            var Discount = await _descount.GetDiscountsByCourseIdAsync(Id);
+            if (Discount == null) 
+            {
+                return View(new CourseDiscount());
+            }
+
+            return View(Discount);
+        }
+
 
     }
 }

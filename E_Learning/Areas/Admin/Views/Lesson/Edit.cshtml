@@ -1,8 +1,9 @@
-﻿@model SectionViewModel
+﻿@model LessonViewModel
 
 @{
     Layout = "_CourseLayout";
     var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
 }
 <form asp-action="Edit" method="post" enctype="multipart/form-data">
     <div class="form-group">
@@ -12,9 +13,9 @@
     </div>
 
     <div class="form-group">
-        <label asp-for="order"></label>
-        <input asp-for="order" class="form-control" type="number" step="1" required />
-        <span asp-validation-for="order"></span>
+        <label asp-for="Order"></label>
+        <input asp-for="Order" class="form-control" type="number" step="1" required />
+        <span asp-validation-for="Order"></span>
 
     </div>
     
@@ -24,11 +25,22 @@
         <span asp-validation-for="AddLesson"></span>
     </div> *@
 
-    <input asp-for="Id" class="form-control" value="@Model.Id" type="text" hidden />
-    <input asp-for="CourseId" class="form-control" value="@Model.CourseId" type="text" hidden />
+    <div class="form-group">
+        <label asp-for="Videourl">Video Url</label>
+        <input asp-for="Videourl" type="text" class="form-control" />
+        <span asp-validation-for="Videourl"></span>
+    </div>
 
-    <button type="submit" class="btn btn-primary">Update Section</button>
-    <a asp-area="Admin" asp-controller="Section" asp-action="Index" asp-route-Id="@Model.CourseId" class="btn btn-danger">
+    <input asp-for="Id" class="form-control" value="@Model.Id" type="text" hidden />
+
+    <div class="form-group">
+        <label asp-for="SectionId">Section</label>
+        <select asp-for="SectionId" class="form-control"  asp-items="Model.sections"   required></select>
+        <span asp-validation-for="SectionId"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update Lesson Data</button>
+    <a asp-area="Admin" asp-controller="Lesson" asp-action="Index" asp-route-Id="@Model.SectionId" class="btn btn-danger">
         Back
     </a>
     <div asp-validation-summary="All" class="text-bg-danger" ></div>

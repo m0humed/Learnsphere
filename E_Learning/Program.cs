@@ -59,9 +59,14 @@ namespace E_Learning
             builder.Services.AddScoped<IStatusRepository, StatusRepository>();
             builder.Services.AddScoped<ICourseListServices, CourseListServices>();
             builder.Services.AddScoped<ISectionLessonRepository, SectionLessonRepository>();
-
+            builder.Services.AddScoped<ICoursePreviewRepository , CoursePreviewRepository>();
             #endregion
 
+            builder.Services.AddAuthorization(options =>
+            {
+                options.AddPolicy("AdminOnly", policy => policy.RequireRole("Admin"));
+                options.AddPolicy("InstructorOrAdmin", policy => policy.RequireRole("Instructor", "Admin"));
+            });
 
             builder.Services.AddIdentity<User, IdentityRole>(op =>
             {

@@ -32,9 +32,8 @@ namespace E_Learning.Areas.Course.Data.Services
             cs.UserDataShortcutView = this.userData.GetDatabyid(cs.CourseView.InstructorId).Result;
             cs.Review = this.courseReview.GetCourseReviews(Id).ToList();
 			cs.Sections = this.courseSection.GetSectionsByCourseIdLazyAsync(Id).Result.ToList();
-			cs.CourseCardDetails = this.courseCard.getAll().Result.Take(3).ToList();
+			cs.CourseCardDetails = this.courseCard.getAll().Result.Take(4).ToList();
 			return Task.FromResult(cs);
-
 		}
 	}
 }

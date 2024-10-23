@@ -36,7 +36,9 @@ namespace E_Learning.Repositories.Repository
                 Lesson1.Videourl = Lesson2.Videourl;
                 Lesson1.AttachedFile = Lesson2.AttachedFile;
                 Lesson1.Order = Lesson2.Order;
+                Lesson1.SectionId = Lesson2.SectionId;
             }
+
             _context.Set<SectionLessons>().Update(Lesson1);
             await _context.SaveChangesAsync();
         }

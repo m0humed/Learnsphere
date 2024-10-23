@@ -47,6 +47,7 @@
     <Folder Include="Views\Category\www.google-analytics.com\" />
     <Folder Include="Views\Course\" />
     <Folder Include="wwwroot\Images\Courses\" />
+    <Folder Include="wwwroot\Videos\" />
   </ItemGroup>
 
   <ItemGroup>

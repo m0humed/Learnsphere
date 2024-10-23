@@ -19,12 +19,12 @@
                     }
                 </ul>
             </div><!--//text-center-->
-            <div class="text-center mb-5">
+          @*   <div class="text-center mb-5">
                 <a class="btn btn-primary scrollto" asp-action="PayCourse">Join Course Now</a>
-            </div>
+            </div> *@
             <div class="video-container">
                 <div class="ratio ratio-16x9">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hZ1DASYd9rk?si=DtSXgLwNLCubb96D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    @Html.Raw(Model.trailerVideoUrl)
                 </div>
             </div>
             <!--//video-container-->
@@ -32,3 +32,4 @@
         </div><!--//section-col-max-->
     </div><!--//container-->
 </div><!--//section-overview-->
+

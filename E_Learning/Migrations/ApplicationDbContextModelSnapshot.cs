@@ -54,7 +54,6 @@ namespace E_Learning.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("CourseImage")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Description")
@@ -88,14 +87,13 @@ namespace E_Learning.Migrations
                     b.Property<int>("numOfStudents")
                         .HasColumnType("int");
 
-                    b.Property<int>("numofSections")
+                    b.Property<int?>("numofSections")
                         .HasColumnType("int");
 
                     b.Property<int>("totalHours")
                         .HasColumnType("int");
 
                     b.Property<string>("trailerVideoUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -427,11 +425,9 @@ namespace E_Learning.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Bio")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Profession")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UserId")
@@ -611,8 +607,8 @@ namespace E_Learning.Migrations
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<byte[]>("AttachedFile")
-                        .HasColumnType("varbinary(max)");
+                    b.Property<string>("AttachedFile")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Order")
                         .HasColumnType("int");
@@ -1043,11 +1039,13 @@ namespace E_Learning.Migrations
 
             modelBuilder.Entity("E_Learning.Models.CoursePreview", b =>
                 {
-                    b.HasOne("E_Learning.Models.Course", null)
+                    b.HasOne("E_Learning.Models.Course", "course")
                         .WithMany("Previews")
                         .HasForeignKey("CourseId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("course");
                 });
 
             modelBuilder.Entity("E_Learning.Models.CourseSection", b =>

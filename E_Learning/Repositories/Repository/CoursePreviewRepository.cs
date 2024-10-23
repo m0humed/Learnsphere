@@ -31,6 +31,14 @@ namespace E_Learning.Repositories.Repository
 
         public async Task UpdateAsync(CoursePreview old, CoursePreview New)
         {
+            {
+                old.Title = New.Title;
+                old.Videourl = New.Videourl;
+            }
+            if (New != old) 
+            { 
+                New.Id = "vnfmcmkvcmkcx";
+            }
             _context.Set<CoursePreview>().Update(old);
             await _context.SaveChangesAsync();
         }
@@ -45,11 +53,10 @@ namespace E_Learning.Repositories.Repository
             }
         }
 
-        public async Task<IEnumerable<CoursePreview>> GetPreviewsByCourseIdAsync(string courseId)
+        public async Task<CoursePreview> GetPreviewsByCourseIdAsync(string courseId)
         {
             return await _context.Set<CoursePreview>()
-                .Where(cp => cp.CourseId == courseId)
-                .ToListAsync();
+                .FirstOrDefaultAsync(cp => cp.CourseId == courseId);
         }
     }
 

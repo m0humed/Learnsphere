@@ -26,8 +26,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = E:\_Pioneers course\Learnsphere\E_Learning
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/_Pioneers course/Learnsphere/E_Learning/Areas/Admin/Views/Admin/AdminList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cQWRtaW5MaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_Pioneers course/Learnsphere/E_Learning/Areas/Admin/Views/Admin/AssignAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cQXNzaWduQWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/_Pioneers course/Learnsphere/E_Learning/Areas/Admin/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_Pioneers course/Learnsphere/E_Learning/Areas/Admin/Views/Admin/Users.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cVXNlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_Pioneers course/Learnsphere/E_Learning/Areas/Admin/Views/Courses/ChangeImage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ291cnNlc1xDaGFuZ2VJbWFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/_Pioneers course/Learnsphere/E_Learning/Areas/Admin/Views/Courses/CoursesList.cshtml]
@@ -48,6 +64,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/_Pioneers course/Learnsphere/E_Learning/Areas/Admin/Views/Courses/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ291cnNlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_Pioneers course/Learnsphere/E_Learning/Areas/Admin/Views/Courses/Trailer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ291cnNlc1xUcmFpbGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_Pioneers course/Learnsphere/E_Learning/Areas/Admin/Views/Instructor/AssignInstructor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSW5zdHJ1Y3RvclxBc3NpZ25JbnN0cnVjdG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_Pioneers course/Learnsphere/E_Learning/Areas/Admin/Views/Instructor/InstructorList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSW5zdHJ1Y3RvclxJbnN0cnVjdG9yTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/_Pioneers course/Learnsphere/E_Learning/Areas/Admin/Views/Lesson/Create.cshtml]

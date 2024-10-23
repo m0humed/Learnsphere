@@ -4,6 +4,7 @@
 
 @{
 	Layout = "_Layout";
+	ViewBag.ViewdCourseId = Model.CourseView.Id;
 }
 
 @* Header *@
@@ -26,7 +27,7 @@
 
 		</div>
 
-		@Html.PartialAsync("_CourseReviewPartialView", Model.Review).Result
+		@* @Html.PartialAsync("_CourseReviewPartialView", Model.Review).Result *@
 
 		@Html.PartialAsync("_InstructorPartialView", Model.UserDataShortcutView).Result
 
