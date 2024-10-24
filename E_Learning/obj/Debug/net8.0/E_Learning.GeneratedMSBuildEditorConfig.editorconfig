@@ -70,6 +70,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ291cnNlc1xUcmFpbGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/_Pioneers course/Learnsphere/E_Learning/Areas/Admin/Views/General/ChangeImage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2VuZXJhbFxDaGFuZ2VJbWFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_Pioneers course/Learnsphere/E_Learning/Areas/Admin/Views/General/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2VuZXJhbFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_Pioneers course/Learnsphere/E_Learning/Areas/Admin/Views/General/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2VuZXJhbFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/_Pioneers course/Learnsphere/E_Learning/Areas/Admin/Views/Instructor/AssignInstructor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSW5zdHJ1Y3RvclxBc3NpZ25JbnN0cnVjdG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -206,6 +218,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGF5bWVudFxWaWV3c1xDYXJ0XF9jYXJ0c3VtbWFyeVBhcnRpYWxWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/_Pioneers course/Learnsphere/E_Learning/Areas/Payment/Views/Checkout/Fail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGF5bWVudFxWaWV3c1xDaGVja291dFxGYWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/_Pioneers course/Learnsphere/E_Learning/Areas/Payment/Views/Checkout/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGF5bWVudFxWaWV3c1xDaGVja291dFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -232,6 +248,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/_Pioneers course/Learnsphere/E_Learning/Areas/Search/Views/Search/_CategoryFilterPartialView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2VhcmNoXFZpZXdzXFNlYXJjaFxfQ2F0ZWdvcnlGaWx0ZXJQYXJ0aWFsVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_Pioneers course/Learnsphere/E_Learning/Areas/Search/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2VhcmNoXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_Pioneers course/Learnsphere/E_Learning/Areas/Search/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2VhcmNoXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_Pioneers course/Learnsphere/E_Learning/Areas/Student/Views/Learning/Progresses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3R1ZGVudFxWaWV3c1xMZWFybmluZ1xQcm9ncmVzc2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_Pioneers course/Learnsphere/E_Learning/Areas/Student/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3R1ZGVudFxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_Pioneers course/Learnsphere/E_Learning/Areas/Student/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3R1ZGVudFxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/_Pioneers course/Learnsphere/E_Learning/Views/AboutUs/Index.cshtml]

@@ -11,7 +11,7 @@ using System.Security.Claims;
 
 namespace E_Learning.Areas.Payment.Controllers
 {
-    //[Authorize]
+    [Authorize]
     [Area("Payment")]
     public class CartController : Controller
     {

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rUkWkUxJw5nNyVBCp/TDMeXVc7+sgSqr6XEPIPekC5g=",
+  "Hash": "0l7UQFdr4YreABHPkCh1ObdtcAeLZ26YJaBdBCSNT78=",
   "Source": "E_Learning",
   "BasePath": "_content/E_Learning",
   "Mode": "Default",
@@ -45254,6 +45254,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Layout\\photo2.jpg"
+    },
+    {
+      "Identity": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\Images\\Users\\e04a723d-a712-4574-9ef9-6c3af6650afa.jpg",
+      "SourceId": "E_Learning",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\",
+      "BasePath": "_content/E_Learning",
+      "RelativePath": "Images/Users/e04a723d-a712-4574-9ef9-6c3af6650afa.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Users\\e04a723d-a712-4574-9ef9-6c3af6650afa.jpg"
     },
     {
       "Identity": "E:\\_Pioneers course\\Learnsphere\\E_Learning\\wwwroot\\Images\\Users\\NotDefine.jpg",

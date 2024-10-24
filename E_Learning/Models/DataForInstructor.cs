@@ -10,6 +10,6 @@ namespace E_Learning.Models
         public int Balance { get; set; }
         [ForeignKey("User")]
         public string UserId { get; set; } = null!;
-        public User User { get; set; }
+        public User? User { get; set; }
     }
 }

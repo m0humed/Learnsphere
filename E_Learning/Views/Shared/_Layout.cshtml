@@ -72,9 +72,9 @@
                     {
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                                <a class="nav-link" asp-area="Student" asp-controller="Learning" asp-action="Progresses">
                                 <div class="d-flex align-items-center">
-                                    My Learning
+                                        <p>My Learning</p>
                                 </div>
                             </a>
                         </li>
@@ -111,7 +111,7 @@
 
  *@
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" asp-area="Admin" asp-controller="General" asp-action="Index">
                                 <div class="d-flex align-items-center">
                                     <img src="~/Images/Users/@user?.Image" alt="User Image" class="rounded-circle img-fluid" style="width: 40px; height: 40px;">
                                     <h6>@user?.UserName</h6>

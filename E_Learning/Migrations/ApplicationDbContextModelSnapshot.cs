@@ -687,6 +687,42 @@ namespace E_Learning.Migrations
                     b.ToTable("Statuses");
                 });
 
+            modelBuilder.Entity("E_Learning.Models.StudentCourseProgress", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("CourseId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("CourseThumbnail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CourseTitle")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("LastUpdated")
+                        .HasColumnType("datetime2");
+
+                    b.Property<double>("ProgressRate")
+                        .HasColumnType("float");
+
+                    b.Property<string>("StudentId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CourseId");
+
+                    b.HasIndex("StudentId");
+
+                    b.ToTable("Progresses");
+                });
+
             modelBuilder.Entity("E_Learning.Models.SubCategory", b =>
                 {
                     b.Property<string>("Id")
@@ -1169,6 +1205,25 @@ namespace E_Learning.Migrations
                         .IsRequired();
 
                     b.Navigation("CourseSection");
+                });
+
+            modelBuilder.Entity("E_Learning.Models.StudentCourseProgress", b =>
+                {
+                    b.HasOne("E_Learning.Models.Course", "Course")
+                        .WithMany()
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("E_Learning.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("E_Learning.Models.UserAccount", b =>

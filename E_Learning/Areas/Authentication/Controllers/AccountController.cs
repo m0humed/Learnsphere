@@ -148,6 +148,7 @@ namespace E_Learning.Areas.Authentication.Controllers
                 var result = await authService.LoginAsync(model);
                 if (result.IsSucceded)
                 {
+                    
                     return RedirectToAction("HomeIndex", "HomeArea", new { area = "Home" });
                 }
                 else
@@ -164,7 +165,7 @@ namespace E_Learning.Areas.Authentication.Controllers
         public async Task<IActionResult> Logout()
         {
             await authService.LogoutAsync();
-            return Ok();
+            return RedirectToAction("HomeIndex", "HomeArea", new {area="Home"});
         }
         #endregion
 

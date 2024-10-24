@@ -15,6 +15,7 @@ using E_Learning.Areas.Search.Data;
 using E_Learning.Areas.Payment.Models;
 using E_Learning.Helper;
 using E_Learning.Areas.Admin.Data.Services;
+using E_Learning.Areas.Student.Data.Services;
 //using PayPal.Api;
 
 namespace E_Learning
@@ -60,6 +61,8 @@ namespace E_Learning
             builder.Services.AddScoped<ICourseListServices, CourseListServices>();
             builder.Services.AddScoped<ISectionLessonRepository, SectionLessonRepository>();
             builder.Services.AddScoped<ICoursePreviewRepository , CoursePreviewRepository>();
+            builder.Services.AddScoped<ILearningService ,LearningService>();
+            builder.Services.AddScoped<IStudentCourseProgressRepository, StudentCourseProgressRepository>();
             #endregion
 
             builder.Services.AddAuthorization(options =>

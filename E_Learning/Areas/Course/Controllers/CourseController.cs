@@ -25,6 +25,7 @@ namespace E_Learning.Areas.Course.Controllers
 			var data  = courseFullData.GetFullDataByIdAsync(id).Result;
 			var numofLessons =  from s in data.Sections
 							    select s.SectionLessons.Count;
+
 			ViewBag.NumberOfLessons = numofLessons.Sum() ;
 
 
